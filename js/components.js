@@ -1,4 +1,7 @@
-// Component Loader
+// Component Loader - KVSRIT Website
+// Handles dynamic injection of reusable components (Navbar, Footer)
+// Supports pages at root level, 1-level deep, and 2-levels deep folders
+
 window.components = {
   header: (currentPage = 'index.html', rootPath = '') => {
     const navItems = [
@@ -27,10 +30,10 @@ window.components = {
           { name: 'Academic Calender', href: 'academics/' },
           { name: 'Regulations and Syllabus', href: 'academics/' },
           { name: 'Exam Cell', href: 'academics/' },
-          { name: 'Research and Development Cell', href: 'academics/' },
+          { name: 'Research and Development Cell', href: 'research/' },
           { name: 'Entrepreneurship Development Cell', href: 'academics/' },
           { name: 'Industry Institute Interaction Cell', href: 'academics/' },
-          { name: 'IQAC', href: 'academics/' },
+          { name: 'IQAC', href: 'iqac/' },
           { name: 'Policies', href: 'academics/' },
         ]
       },
@@ -42,6 +45,7 @@ window.components = {
           { name: 'Student Portal', href: 'student-portal/' },
           { name: 'Alumni', href: 'alumni/' },
           { name: 'Facilities', href: 'facilities/' },
+          { name: 'Library', href: 'library/' },
           { name: 'Events', href: 'events/' },
         ]
       },
@@ -57,7 +61,7 @@ window.components = {
       },
       {
         name: 'Departments',
-        href: 'departments/index.html',
+        href: 'departments/',
         dropdown: [
           { name: 'CSE', href: 'departments/cse/' },
           { name: 'ECE', href: 'departments/ece/' },
@@ -94,7 +98,7 @@ window.components = {
               ${item.name}
               <i data-lucide="chevron-down" class="w-4 h-4 group-hover:rotate-180 transition-transform duration-200"></i>
             </button>
-            <div class="absolute left-0 mt-1 w-56 rounded-xl shadow-xl bg-white ring-1 ring-gray-100 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 transform origin-top-left translate-y-2 group-hover:translate-y-0">
+            <div class="absolute left-0 mt-1 w-56 rounded-xl shadow-xl bg-white ring-1 ring-gray-100 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 transform origin-top-left translate-y-2 group-hover:translate-y-0 z-50">
               <div class="py-2 px-2">
                 ${item.dropdown.map(subItem => `
                   <a href="${rootPath}${subItem.href}" class="block px-4 py-2.5 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-600 rounded-lg transition-colors">
@@ -110,6 +114,27 @@ window.components = {
           <a href="${rootPath}${item.href}" class="text-gray-700 hover:text-blue-600 px-4 py-2 rounded-lg text-sm font-medium transition-colors hover:bg-blue-50">
             ${item.name}
           </a>
+        `;
+      }
+    });
+
+    // Mobile nav items
+    let mobileNavHtml = '';
+    navItems.forEach(item => {
+      if (item.dropdown) {
+        mobileNavHtml += `
+          <div class="py-2">
+            <div class="font-bold text-gray-900 py-2">${item.name}</div>
+            <div class="pl-4 space-y-1">
+              ${item.dropdown.slice(0, 5).map(subItem => `
+                <a href="${rootPath}${subItem.href}" class="block py-1 text-gray-600 hover:text-blue-600">${subItem.name}</a>
+              `).join('')}
+            </div>
+          </div>
+        `;
+      } else {
+        mobileNavHtml += `
+          <a href="${rootPath}${item.href}" class="block text-lg font-bold text-gray-900 py-2">${item.name}</a>
         `;
       }
     });
@@ -131,7 +156,7 @@ window.components = {
             </div>
             <nav class="hidden lg:flex space-x-1 items-center">
               ${navHtml}
-              <a href="${rootPath}apply.html" class="ml-4 bg-gradient-to-r from-blue-600 to-indigo-600 text-white px-6 py-2.5 rounded-full text-sm font-semibold hover:shadow-lg hover:shadow-blue-500/25 transition-all duration-300 hover:-translate-y-0.5">
+              <a href="${rootPath}admissions/" class="ml-4 bg-gradient-to-r from-blue-600 to-indigo-600 text-white px-6 py-2.5 rounded-full text-sm font-semibold hover:shadow-lg hover:shadow-blue-500/25 transition-all duration-300 hover:-translate-y-0.5">
                 Apply Now
               </a>
             </nav>
@@ -142,9 +167,12 @@ window.components = {
             </div>
           </div>
         </div>
-        <!-- Mobile Menu Placeholder -->
-        <div id="mobile-menu" class="hidden lg:hidden bg-white border-t border-gray-100 px-4 pb-6 space-y-1">
-          <!-- Mobile items injected here via main.js if needed -->
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden lg:hidden bg-white border-t border-gray-100 px-4 pb-6">
+          <div class="py-4 space-y-1">
+            ${mobileNavHtml}
+            <a href="${rootPath}admissions/" class="block mt-4 bg-blue-600 text-white px-6 py-4 rounded-2xl text-center font-bold">Apply Now</a>
+          </div>
         </div>
       </header>
     `;
@@ -177,30 +205,36 @@ window.components = {
               <div>
                 <h4 class="text-lg font-semibold mb-6">Quick Links</h4>
                 <ul class="space-y-3">
-                  <li><a href="${rootPath}about.html" class="text-gray-400 hover:text-white transition-colors">About Us</a></li>
-                  <li><a href="${rootPath}academics.html" class="text-gray-400 hover:text-white transition-colors">Academics</a></li>
-                  <li><a href="${rootPath}admissions.html" class="text-gray-400 hover:text-white transition-colors">Admissions</a></li>
-                  <li><a href="${rootPath}placements.html" class="text-gray-400 hover:text-white transition-colors">Placements</a></li>
+                  <li><a href="${rootPath}about/" class="text-gray-400 hover:text-white transition-colors">About Us</a></li>
+                  <li><a href="${rootPath}academics/" class="text-gray-400 hover:text-white transition-colors">Academics</a></li>
+                  <li><a href="${rootPath}admissions/" class="text-gray-400 hover:text-white transition-colors">Admissions</a></li>
+                  <li><a href="${rootPath}placements/" class="text-gray-400 hover:text-white transition-colors">Placements</a></li>
+                  <li><a href="${rootPath}contact/" class="text-gray-400 hover:text-white transition-colors">Contact</a></li>
                 </ul>
               </div>
               <div>
-                <h4 class="text-lg font-semibold mb-6">Academics</h4>
+                <h4 class="text-lg font-semibold mb-6">Departments</h4>
                 <ul class="space-y-3">
-                  <li><a href="${rootPath}courses.html" class="text-gray-400 hover:text-white transition-colors">B.Tech Programs</a></li>
-                  <li><a href="${rootPath}courses.html" class="text-gray-400 hover:text-white transition-colors">M.Tech Programs</a></li>
-                  <li><a href="${rootPath}courses.html" class="text-gray-400 hover:text-white transition-colors">MBA & MCA</a></li>
+                  <li><a href="${rootPath}departments/cse/" class="text-gray-400 hover:text-white transition-colors">Computer Science</a></li>
+                  <li><a href="${rootPath}departments/ece/" class="text-gray-400 hover:text-white transition-colors">Electronics & Communication</a></li>
+                  <li><a href="${rootPath}departments/me/" class="text-gray-400 hover:text-white transition-colors">Mechanical</a></li>
+                  <li><a href="${rootPath}departments/ai/" class="text-gray-400 hover:text-white transition-colors">Artificial Intelligence</a></li>
                 </ul>
               </div>
               <div>
                 <h4 class="text-lg font-semibold mb-6">Contact Us</h4>
                 <ul class="space-y-4">
                   <li class="flex items-start gap-3">
-                    <i data-lucide="map-pin" class="w-5 h-5 text-blue-400"></i>
-                    <p class="text-gray-400 text-sm">Dupadu, Kurnool - 518218</p>
+                    <i data-lucide="map-pin" class="w-5 h-5 text-blue-400 flex-shrink-0"></i>
+                    <p class="text-gray-400 text-sm">Dupadu, NH-44, Kurnool, AP - 518218</p>
                   </li>
                   <li class="flex items-center gap-3">
                     <i data-lucide="phone" class="w-5 h-5 text-emerald-400"></i>
-                    <a href="tel:+911234567890" class="text-gray-400 text-sm">+91 12345 67890</a>
+                    <a href="tel:+919100033333" class="text-gray-400 text-sm hover:text-white transition-colors">+91 91000 33333</a>
+                  </li>
+                  <li class="flex items-center gap-3">
+                    <i data-lucide="mail" class="w-5 h-5 text-purple-400"></i>
+                    <a href="mailto:office@drkvsrit.ac.in" class="text-gray-400 text-sm hover:text-white transition-colors">office@drkvsrit.ac.in</a>
                   </li>
                 </ul>
               </div>
@@ -208,9 +242,9 @@ window.components = {
             <div class="border-t border-white/10 mt-16 pt-8 flex flex-col md:flex-row justify-between items-center gap-6">
               <p class="text-gray-500 text-sm">© ${currentYear} KVSRIT. All rights reserved.</p>
               <div class="flex gap-6 text-xs font-bold uppercase tracking-widest text-gray-400">
-                <a href="#">IQAC</a>
-                <a href="#">RTI</a>
-                <a href="#">Privacy</a>
+                <a href="${rootPath}iqac/" class="hover:text-white transition-colors">IQAC</a>
+                <a href="${rootPath}mandatory-disclosures/" class="hover:text-white transition-colors">Disclosures</a>
+                <a href="#" class="hover:text-white transition-colors">Privacy</a>
               </div>
             </div>
           </div>

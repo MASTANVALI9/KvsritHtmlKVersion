@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>KVSRIT | Dr. K.V. Subba Reddy Institute of Technology</title>
+    <meta name="description"
+        content="Dr. K.V. Subba Reddy Institute of Technology - NAAC A+ Accredited Engineering College in Kurnool, offering B.Tech, M.Tech, MBA, and MCA programs.">
 
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -33,6 +35,10 @@
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap"
         rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
     <style>
         body {
             font-family: 'Plus Jakarta Sans', sans-serif;
@@ -47,6 +53,13 @@
         .gradient-overlay {
             background: linear-gradient(to bottom, rgba(30, 58, 138, 0.4), rgba(30, 58, 138, 0.9));
         }
+
+        .gradient-text {
+            background: linear-gradient(135deg, #3B82F6 0%, #8B5CF6 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
     </style>
 
     <!-- Lucide Icons -->
@@ -54,189 +67,216 @@
 </head>
 
 <body class="bg-white text-gray-900 overflow-x-hidden">
+    <div id="app">
+        <!-- Header Injected Here -->
 
-    <!-- Navbar Placeholder -->
-    <div id="navbar-placeholder"></div>
-
-    <main>
-        <!-- News Ticker -->
-        <div class="bg-blue-50 py-3 overflow-hidden border-b border-blue-100">
-            <div class="max-w-7xl mx-auto px-4 flex items-center">
-                <div
-                    class="bg-blue-600 text-white text-[10px] font-bold uppercase tracking-widest px-3 py-1 rounded-full mr-4 z-10 whitespace-nowrap">
-                    Latest News</div>
-                <div class="animate-marquee whitespace-nowrap text-sm font-medium text-blue-900 italic">
-                    • Admissions Open for 2024-25 • NAAC A+ Accredited Institution • Highest Placement Package of 15 LPA
-                    • Last date for application extended to March 31st •
-                </div>
-            </div>
-        </div>
-
-        <!-- Hero Section (Carousel/Interactive) -->
-        <section class="relative h-[650px] overflow-hidden">
-            <div class="absolute inset-0">
-                <img src="images/hero/hero-1.png" alt="Campus" class="w-full h-full object-cover">
-                <div class="absolute inset-0 gradient-overlay"></div>
-            </div>
-
-            <div class="relative z-10 max-w-7xl mx-auto px-4 h-full flex items-center">
-                <div class="max-w-2xl text-white space-y-6">
+        <main>
+            <!-- News Ticker -->
+            <div class="bg-blue-50 py-3 overflow-hidden border-b border-blue-100">
+                <div class="max-w-7xl mx-auto px-4 flex items-center">
                     <div
-                        class="inline-flex items-center gap-2 px-4 py-2 rounded-full glass text-xs font-bold uppercase tracking-widest text-blue-200">
-                        <i data-lucide="award" class="w-4 h-4"></i> Accredited by NAAC A+ Grade
-                    </div>
-                    <h1 class="text-5xl md:text-7xl font-extrabold leading-tight">
-                        Shape Your <span class="text-blue-400">Future</span> With Excellence
-                    </h1>
-                    <p class="text-lg text-blue-100/80 leading-relaxed">
-                        Join KVSRIT to experience world-class engineering education with state-of-the-art infrastructure
-                        and top-tier industry placements.
-                    </p>
-                    <div class="flex flex-col sm:flex-row gap-4 pt-4">
-                        <a href="admissions.html"
-                            class="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-full font-bold transition-all transform hover:-translate-y-1 text-center">Start
-                            Admission</a>
-                        <a href="about.html"
-                            class="glass hover:bg-white/20 text-white px-8 py-4 rounded-full font-bold transition-all text-center">Learn
-                            More</a>
+                        class="bg-blue-600 text-white text-[10px] font-bold uppercase tracking-widest px-3 py-1 rounded-full mr-4 z-10 whitespace-nowrap">
+                        Latest News</div>
+                    <div class="animate-marquee whitespace-nowrap text-sm font-medium text-blue-900 italic">
+                        • Admissions Open for 2024-25 • NAAC A+ Accredited Institution • Highest Placement Package of 15
+                        LPA
+                        • Last date for application extended to March 31st •
                     </div>
                 </div>
             </div>
 
-            <!-- Quick Stats Floating bar -->
-            <div class="absolute bottom-0 left-0 w-full glass py-8 border-t-0 border-x-0 hidden md:block">
-                <div class="max-w-7xl mx-auto px-4 grid grid-cols-4 gap-8">
-                    <div class="text-center">
-                        <div class="text-3xl font-extrabold text-white">15+</div>
-                        <div class="text-xs text-blue-200 font-bold uppercase tracking-widest">Years of Excellence</div>
-                    </div>
-                    <div class="text-center">
-                        <div class="text-3xl font-extrabold text-white">4500+</div>
-                        <div class="text-xs text-blue-200 font-bold uppercase tracking-widest">Graduated Students</div>
-                    </div>
-                    <div class="text-center">
-                        <div class="text-3xl font-extrabold text-white">95%</div>
-                        <div class="text-xs text-blue-200 font-bold uppercase tracking-widest">Placement Record</div>
-                    </div>
-                    <div class="text-center">
-                        <div class="text-3xl font-extrabold text-white">12+</div>
-                        <div class="text-xs text-blue-200 font-bold uppercase tracking-widest">Industry Labs</div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Why Choose KVSRIT -->
-        <section class="py-24 bg-gray-50">
-            <div class="max-w-7xl mx-auto px-4">
-                <div class="text-center max-w-3xl mx-auto mb-16">
-                    <h2 class="text-sm font-bold text-blue-600 uppercase tracking-widest mb-4">Why DrKVSRIT</h2>
-                    <h3 class="text-4xl font-extrabold text-gray-900 leading-tight">Pioneering Education for Tomorrow's
-                        Leaders</h3>
+            <!-- Hero Section -->
+            <section class="relative h-[650px] overflow-hidden">
+                <div class="absolute inset-0">
+                    <img src="images/hero/hero-1.png" alt="KVSRIT Campus" class="w-full h-full object-cover">
+                    <div class="absolute inset-0 gradient-overlay"></div>
                 </div>
 
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                    <!-- Feature 1 -->
-                    <div
-                        class="bg-white p-10 rounded-3xl shadow-sm hover:shadow-xl transition-all group border border-gray-100">
+                <div class="relative z-10 max-w-7xl mx-auto px-4 h-full flex items-center">
+                    <div class="max-w-2xl text-white space-y-6">
                         <div
-                            class="w-14 h-14 bg-blue-100 rounded-2xl flex items-center justify-center mb-8 group-hover:bg-blue-600 transition-colors">
-                            <i data-lucide="shield-check" class="w-7 h-7 text-blue-600 group-hover:text-white"></i>
+                            class="inline-flex items-center gap-2 px-4 py-2 rounded-full glass text-xs font-bold uppercase tracking-widest text-blue-200">
+                            <i data-lucide="award" class="w-4 h-4"></i> Accredited by NAAC A+ Grade
                         </div>
-                        <h4 class="text-xl font-bold mb-4">Credentials</h4>
-                        <p class="text-gray-600 text-sm leading-relaxed">NBA & NAAC Accredited with A+ Grade. Ranked
-                            among Top 100 in Higher Education Review.</p>
+                        <h1 class="text-5xl md:text-7xl font-extrabold leading-tight">
+                            Shape Your <span class="text-blue-400">Future</span> With Excellence
+                        </h1>
+                        <p class="text-lg text-blue-100/80 leading-relaxed">
+                            Join KVSRIT to experience world-class engineering education with state-of-the-art
+                            infrastructure
+                            and top-tier industry placements.
+                        </p>
+                        <div class="flex flex-col sm:flex-row gap-4 pt-4">
+                            <a href="admissions/"
+                                class="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-full font-bold transition-all transform hover:-translate-y-1 text-center">Start
+                                Admission</a>
+                            <a href="about/"
+                                class="glass hover:bg-white/20 text-white px-8 py-4 rounded-full font-bold transition-all text-center">Learn
+                                More</a>
+                        </div>
                     </div>
-                    <!-- Feature 2 -->
-                    <div
-                        class="bg-white p-10 rounded-3xl shadow-sm hover:shadow-xl transition-all group border border-gray-100">
+                </div>
+
+                <!-- Quick Stats Floating bar -->
+                <div class="absolute bottom-0 left-0 w-full glass py-8 border-t-0 border-x-0 hidden md:block">
+                    <div class="max-w-7xl mx-auto px-4 grid grid-cols-4 gap-8">
+                        <div class="text-center">
+                            <div class="text-3xl font-extrabold text-white">15+</div>
+                            <div class="text-xs text-blue-200 font-bold uppercase tracking-widest">Years of Excellence
+                            </div>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-3xl font-extrabold text-white">4500+</div>
+                            <div class="text-xs text-blue-200 font-bold uppercase tracking-widest">Graduated Students
+                            </div>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-3xl font-extrabold text-white">95%</div>
+                            <div class="text-xs text-blue-200 font-bold uppercase tracking-widest">Placement Record
+                            </div>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-3xl font-extrabold text-white">12+</div>
+                            <div class="text-xs text-blue-200 font-bold uppercase tracking-widest">Industry Labs</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Why Choose KVSRIT -->
+            <section class="py-24 bg-gray-50">
+                <div class="max-w-7xl mx-auto px-4">
+                    <div class="text-center max-w-3xl mx-auto mb-16">
+                        <h2 class="text-sm font-bold text-blue-600 uppercase tracking-widest mb-4">Why DrKVSRIT</h2>
+                        <h3 class="text-4xl font-extrabold text-gray-900 leading-tight">Pioneering Education for
+                            Tomorrow's
+                            Leaders</h3>
+                    </div>
+
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                        <!-- Feature 1 -->
                         <div
-                            class="w-14 h-14 bg-emerald-100 rounded-2xl flex items-center justify-center mb-8 group-hover:bg-emerald-600 transition-colors">
-                            <i data-lucide="book-open" class="w-7 h-7 text-emerald-600 group-hover:text-white"></i>
+                            class="bg-white p-10 rounded-3xl shadow-sm hover:shadow-xl transition-all group border border-gray-100">
+                            <div
+                                class="w-14 h-14 bg-blue-100 rounded-2xl flex items-center justify-center mb-8 group-hover:bg-blue-600 transition-colors">
+                                <i data-lucide="shield-check" class="w-7 h-7 text-blue-600 group-hover:text-white"></i>
+                            </div>
+                            <h4 class="text-xl font-bold mb-4">Credentials</h4>
+                            <p class="text-gray-600 text-sm leading-relaxed">NBA & NAAC Accredited with A+ Grade. Ranked
+                                among Top 100 in Higher Education Review.</p>
                         </div>
-                        <h4 class="text-xl font-bold mb-4">Teaching Excellence</h4>
-                        <p class="text-gray-600 text-sm leading-relaxed">Joyful journey of learning with JNTUA
-                            curriculum and innovative industry-ready process.</p>
-                    </div>
-                    <!-- Feature 3 -->
-                    <div
-                        class="bg-white p-10 rounded-3xl shadow-sm hover:shadow-xl transition-all group border border-gray-100">
+                        <!-- Feature 2 -->
                         <div
-                            class="w-14 h-14 bg-amber-100 rounded-2xl flex items-center justify-center mb-8 group-hover:bg-amber-600 transition-colors">
-                            <i data-lucide="briefcase" class="w-7 h-7 text-amber-600 group-hover:text-white"></i>
+                            class="bg-white p-10 rounded-3xl shadow-sm hover:shadow-xl transition-all group border border-gray-100">
+                            <div
+                                class="w-14 h-14 bg-emerald-100 rounded-2xl flex items-center justify-center mb-8 group-hover:bg-emerald-600 transition-colors">
+                                <i data-lucide="book-open" class="w-7 h-7 text-emerald-600 group-hover:text-white"></i>
+                            </div>
+                            <h4 class="text-xl font-bold mb-4">Teaching Excellence</h4>
+                            <p class="text-gray-600 text-sm leading-relaxed">Joyful journey of learning with JNTUA
+                                curriculum and innovative industry-ready process.</p>
                         </div>
-                        <h4 class="text-xl font-bold mb-4">Placements</h4>
-                        <p class="text-gray-600 text-sm leading-relaxed">Series of training programs bridging the gap
-                            between campus and global industrial requirements.</p>
+                        <!-- Feature 3 -->
+                        <div
+                            class="bg-white p-10 rounded-3xl shadow-sm hover:shadow-xl transition-all group border border-gray-100">
+                            <div
+                                class="w-14 h-14 bg-amber-100 rounded-2xl flex items-center justify-center mb-8 group-hover:bg-amber-600 transition-colors">
+                                <i data-lucide="briefcase" class="w-7 h-7 text-amber-600 group-hover:text-white"></i>
+                            </div>
+                            <h4 class="text-xl font-bold mb-4">Placements</h4>
+                            <p class="text-gray-600 text-sm leading-relaxed">Series of training programs bridging the
+                                gap
+                                between campus and global industrial requirements.</p>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </section>
+            </section>
 
-        <!-- Programs (Modern Flat Card Style) -->
-        <section class="py-24 bg-white">
-            <div class="max-w-7xl mx-auto px-4">
-                <div class="flex justify-between items-end mb-16">
-                    <div>
-                        <h2 class="text-sm font-bold text-blue-600 uppercase tracking-widest mb-4">Undergraduate</h2>
-                        <h3 class="text-4xl font-extrabold text-gray-900">Featured Programs</h3>
+            <!-- Programs Section -->
+            <section class="py-24 bg-white">
+                <div class="max-w-7xl mx-auto px-4">
+                    <div class="flex justify-between items-end mb-16">
+                        <div>
+                            <h2 class="text-sm font-bold text-blue-600 uppercase tracking-widest mb-4">Undergraduate
+                            </h2>
+                            <h3 class="text-4xl font-extrabold text-gray-900">Featured Programs</h3>
+                        </div>
+                        <a href="academics/"
+                            class="text-blue-600 font-bold flex items-center gap-2 hover:gap-4 transition-all">View All
+                            Courses <i data-lucide="arrow-right" class="w-5 h-5"></i></a>
                     </div>
-                    <a href="academics.html"
-                        class="text-blue-600 font-bold flex items-center gap-2 hover:gap-4 transition-all">View All
-                        Courses <i data-lucide="arrow-right" class="w-5 h-5"></i></a>
-                </div>
 
-                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-                    <a href="departments/ai.html" class="group relative overflow-hidden rounded-3xl aspect-[4/5]">
-                        <img src="images/hero/hero-2.png"
-                            class="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
-                        <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent"></div>
-                        <div class="absolute bottom-6 left-6 text-white">
-                            <h4 class="text-xl font-bold">CSE (AI & ML)</h4>
-                            <p class="text-xs text-gray-300 mt-1">4 Years • B.Tech</p>
-                        </div>
-                    </a>
-                    <a href="departments/cse.html" class="group relative overflow-hidden rounded-3xl aspect-[4/5]">
-                        <img src="images/hero/extra-1.png"
-                            class="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
-                        <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent"></div>
-                        <div class="absolute bottom-6 left-6 text-white">
-                            <h4 class="text-xl font-bold">Computer Science</h4>
-                            <p class="text-xs text-gray-300 mt-1">4 Years • B.Tech</p>
-                        </div>
-                    </a>
-                    <a href="departments/ece.html" class="group relative overflow-hidden rounded-3xl aspect-[4/5]">
-                        <img src="images/campus/campus-view.jpg"
-                            class="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
-                        <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent"></div>
-                        <div class="absolute bottom-6 left-6 text-white">
-                            <h4 class="text-xl font-bold">Electronics (ECE)</h4>
-                            <p class="text-xs text-gray-300 mt-1">4 Years • B.Tech</p>
-                        </div>
-                    </a>
-                    <a href="departments/me.html" class="group relative overflow-hidden rounded-3xl aspect-[4/5]">
-                        <img src="images/hero/hero-1.png"
-                            class="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
-                        <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent"></div>
-                        <div class="absolute bottom-6 left-6 text-white">
-                            <h4 class="text-xl font-bold">Mechanical (ME)</h4>
-                            <p class="text-xs text-gray-300 mt-1">4 Years • B.Tech</p>
-                        </div>
-                    </a>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                        <a href="departments/ai/" class="group relative overflow-hidden rounded-3xl aspect-[4/5]">
+                            <img src="images/hero/hero-2.png"
+                                class="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent">
+                            </div>
+                            <div class="absolute bottom-6 left-6 text-white">
+                                <h4 class="text-xl font-bold">CSE (AI & ML)</h4>
+                                <p class="text-xs text-gray-300 mt-1">4 Years • B.Tech</p>
+                            </div>
+                        </a>
+                        <a href="departments/cse/" class="group relative overflow-hidden rounded-3xl aspect-[4/5]">
+                            <img src="images/hero/extra-1.png"
+                                class="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent">
+                            </div>
+                            <div class="absolute bottom-6 left-6 text-white">
+                                <h4 class="text-xl font-bold">Computer Science</h4>
+                                <p class="text-xs text-gray-300 mt-1">4 Years • B.Tech</p>
+                            </div>
+                        </a>
+                        <a href="departments/ece/" class="group relative overflow-hidden rounded-3xl aspect-[4/5]">
+                            <img src="images/campus/campus-view.jpg"
+                                class="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent">
+                            </div>
+                            <div class="absolute bottom-6 left-6 text-white">
+                                <h4 class="text-xl font-bold">Electronics (ECE)</h4>
+                                <p class="text-xs text-gray-300 mt-1">4 Years • B.Tech</p>
+                            </div>
+                        </a>
+                        <a href="departments/me/" class="group relative overflow-hidden rounded-3xl aspect-[4/5]">
+                            <img src="images/hero/hero-1.png"
+                                class="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent">
+                            </div>
+                            <div class="absolute bottom-6 left-6 text-white">
+                                <h4 class="text-xl font-bold">Mechanical (ME)</h4>
+                                <p class="text-xs text-gray-300 mt-1">4 Years • B.Tech</p>
+                            </div>
+                        </a>
+                    </div>
                 </div>
-            </div>
-        </section>
-    </main>
+            </section>
 
-    <!-- Footer Placeholder -->
-    <div id="footer-placeholder"></div>
+            <!-- CTA Section -->
+            <section class="py-20 bg-gradient-to-r from-blue-900 to-indigo-900">
+                <div class="max-w-7xl mx-auto px-4 text-center">
+                    <h2 class="text-4xl font-extrabold text-white mb-6">Ready to Start Your Journey?</h2>
+                    <p class="text-xl text-blue-100 mb-8 max-w-2xl mx-auto">Join thousands of students who have chosen
+                        KVSRIT for their engineering education.</p>
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                        <a href="admissions/"
+                            class="bg-white text-blue-900 px-8 py-4 rounded-full font-bold hover:bg-blue-50 transition-all">Apply
+                            Now</a>
+                        <a href="contact/"
+                            class="border-2 border-white text-white px-8 py-4 rounded-full font-bold hover:bg-white/10 transition-all">Contact
+                            Us</a>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer Injected Here -->
+    </div>
 
     <!-- Scripts -->
-    <script src="assets/js/components.js"></script>
-    <script>
-        // Init Lucide
-        lucide.createIcons();
-    </script>
+    <script src="js/data.js"></script>
+    <script src="js/components.js"></script>
+    <script>window.rootPath = '';</script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>

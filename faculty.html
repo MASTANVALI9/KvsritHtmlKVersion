@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Faculty | KVSRIT</title>
+    <meta name="description"
+        content="Meet our distinguished faculty members at KVSRIT. Experienced professors and educators dedicated to student success.">
 
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -24,6 +26,10 @@
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap"
         rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
     <style>
         body {
             font-family: 'Plus Jakarta Sans', sans-serif;
@@ -35,128 +41,172 @@
 </head>
 
 <body class="bg-white text-gray-900">
+    <div id="app">
+        <!-- Header Injected Here -->
 
-    <!-- Navbar Placeholder -->
-    <div id="navbar-placeholder"></div>
+        <main>
+            <!-- Page Header -->
+            <section class="bg-blue-900 text-white py-20 relative overflow-hidden text-center">
+                <div class="max-w-4xl mx-auto px-4 relative z-10">
+                    <nav
+                        class="flex justify-center items-center gap-2 text-blue-300 text-xs font-bold uppercase tracking-widest mb-6">
+                        <a href="index.html" class="hover:text-white transition-colors">Home</a>
+                        <i data-lucide="chevron-right" class="w-3 h-3"></i>
+                        <span class="text-white">Faculty</span>
+                    </nav>
+                    <h1 class="text-5xl font-extrabold mb-6">Our Faculty</h1>
+                    <p class="text-lg text-blue-100/80 leading-relaxed">
+                        Meet our distinguished educators who shape the future of engineering
+                    </p>
+                </div>
+            </section>
 
-    <main>
-        <!-- Page Header -->
-        <section class="bg-blue-900 text-white py-20 relative overflow-hidden">
-            <div class="max-w-7xl mx-auto px-4 relative z-10">
-                <nav class="flex items-center gap-2 text-blue-300 text-xs font-bold uppercase tracking-widest mb-6">
-                    <a href="index.html" class="hover:text-white transition-colors">Home</a>
-                    <i data-lucide="chevron-right" class="w-3 h-3"></i>
-                    <span class="text-white">Our Faculty</span>
-                </nav>
-                <h1 class="text-5xl font-extrabold mb-4 italic">The Architects of Wisdom</h1>
-                <p class="text-blue-200 text-lg max-w-2xl leading-relaxed">
-                    Our distinguished faculty members are dedicated to fostering innovation and excellence in every
-                    student.
-                </p>
-            </div>
-        </section>
-
-        <!-- Faculty Filter -->
-        <section
-            class="py-12 bg-white sticky top-20 z-40 border-b border-gray-100 shadow-sm overflow-x-auto no-scrollbar">
-            <div class="max-w-7xl mx-auto px-4 flex gap-4 whitespace-nowrap">
-                <button class="px-6 py-2 rounded-full bg-blue-600 text-white font-bold text-sm">All Departments</button>
-                <button
-                    class="px-6 py-2 rounded-full bg-gray-50 text-gray-500 hover:bg-blue-50 hover:text-blue-600 transition-all font-bold text-sm">CSE
-                    (AI & ML)</button>
-                <button
-                    class="px-6 py-2 rounded-full bg-gray-50 text-gray-500 hover:bg-blue-50 hover:text-blue-600 transition-all font-bold text-sm">Computer
-                    Science</button>
-                <button
-                    class="px-6 py-2 rounded-full bg-gray-50 text-gray-500 hover:bg-blue-50 hover:text-blue-600 transition-all font-bold text-sm">Electronics
-                    (ECE)</button>
-                <button
-                    class="px-6 py-2 rounded-full bg-gray-50 text-gray-500 hover:bg-blue-50 hover:text-blue-600 transition-all font-bold text-sm">Mechanical</button>
-                <button
-                    class="px-6 py-2 rounded-full bg-gray-50 text-gray-500 hover:bg-blue-50 hover:text-blue-600 transition-all font-bold text-sm">Management</button>
-            </div>
-        </section>
-
-        <section class="py-24">
-            <div class="max-w-7xl mx-auto px-4">
-                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12">
-                    <!-- Faculty Card 1 -->
-                    <div class="group">
-                        <div
-                            class="relative mb-6 overflow-hidden rounded-[40px] aspect-square bg-blue-50 flex items-center justify-center">
-                            <i data-lucide="user"
-                                class="w-24 h-24 text-blue-200 transition-all duration-500 group-hover:scale-110"></i>
-                            <div
-                                class="absolute inset-0 bg-gradient-to-t from-blue-900/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity">
-                            </div>
+            <!-- Faculty Stats -->
+            <section class="py-16 bg-gray-50">
+                <div class="max-w-7xl mx-auto px-4">
+                    <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+                        <div class="text-center">
+                            <div class="text-4xl font-extrabold text-blue-600 mb-2">80+</div>
+                            <div class="text-sm text-gray-600 font-medium">Faculty Members</div>
                         </div>
-                        <h4 class="text-xl font-bold text-gray-900 group-hover:text-blue-600 transition-colors">Dr. M.
-                            Veera Sankar</h4>
-                        <p class="text-xs font-bold text-gray-500 uppercase tracking-widest mt-1">Principal & Professor
-                        </p>
-                        <p class="text-[10px] text-blue-600 font-bold uppercase mt-3">Ph.D in CSE</p>
-                    </div>
-
-                    <!-- Faculty Card 2 -->
-                    <div class="group">
-                        <div class="relative mb-6 overflow-hidden rounded-[40px] aspect-square bg-gray-50">
-                            <div class="w-full h-full flex items-center justify-center text-gray-300"><i
-                                    data-lucide="user" class="w-20 h-20"></i></div>
-                            <div
-                                class="absolute inset-0 bg-gradient-to-t from-blue-900/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity">
-                            </div>
+                        <div class="text-center">
+                            <div class="text-4xl font-extrabold text-blue-600 mb-2">45+</div>
+                            <div class="text-sm text-gray-600 font-medium">Ph.D Holders</div>
                         </div>
-                        <h4 class="text-xl font-bold text-gray-900 group-hover:text-blue-600 transition-colors">Dr. S.
-                            John Doe</h4>
-                        <p class="text-xs font-bold text-gray-500 uppercase tracking-widest mt-1">HOD - CSE (AI & ML)
-                        </p>
-                        <p class="text-[10px] text-blue-600 font-bold uppercase mt-3">Ph.D in AI</p>
-                    </div>
-
-                    <!-- Faculty Card 3 -->
-                    <div class="group">
-                        <div class="relative mb-6 overflow-hidden rounded-[40px] aspect-square bg-gray-50">
-                            <div class="w-full h-full flex items-center justify-center text-gray-300"><i
-                                    data-lucide="user" class="w-20 h-20"></i></div>
-                            <div
-                                class="absolute inset-0 bg-gradient-to-t from-blue-900/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity">
-                            </div>
+                        <div class="text-center">
+                            <div class="text-4xl font-extrabold text-blue-600 mb-2">150+</div>
+                            <div class="text-sm text-gray-600 font-medium">Publications</div>
                         </div>
-                        <h4 class="text-xl font-bold text-gray-900 group-hover:text-blue-600 transition-colors">Mrs. A.
-                            Smitha</h4>
-                        <p class="text-xs font-bold text-gray-500 uppercase tracking-widest mt-1">Associate Professor
-                        </p>
-                        <p class="text-[10px] text-blue-600 font-bold uppercase mt-3">M.Tech (DECS)</p>
-                    </div>
-
-                    <!-- Faculty Card 4 -->
-                    <div class="group">
-                        <div class="relative mb-6 overflow-hidden rounded-[40px] aspect-square bg-gray-50">
-                            <div class="w-full h-full flex items-center justify-center text-gray-300"><i
-                                    data-lucide="user" class="w-20 h-20"></i></div>
-                            <div
-                                class="absolute inset-0 bg-gradient-to-t from-blue-900/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity">
-                            </div>
+                        <div class="text-center">
+                            <div class="text-4xl font-extrabold text-blue-600 mb-2">20+</div>
+                            <div class="text-sm text-gray-600 font-medium">Years Avg Experience</div>
                         </div>
-                        <h4 class="text-xl font-bold text-gray-900 group-hover:text-blue-600 transition-colors">Mr. K.
-                            Rahul</h4>
-                        <p class="text-xs font-bold text-gray-500 uppercase tracking-widest mt-1">Assistant Professor
-                        </p>
-                        <p class="text-[10px] text-blue-600 font-bold uppercase mt-3">M.Tech (Thermal)</p>
                     </div>
                 </div>
-            </div>
-        </section>
-    </main>
+            </section>
 
-    <!-- Footer Placeholder -->
-    <div id="footer-placeholder"></div>
+            <!-- Faculty by Department -->
+            <section class="py-24">
+                <div class="max-w-7xl mx-auto px-4">
+                    <div class="text-center mb-16">
+                        <h2 class="text-sm font-bold text-blue-600 uppercase tracking-widest mb-4">Our Team</h2>
+                        <h3 class="text-4xl font-extrabold text-gray-900">Faculty by Department</h3>
+                    </div>
+
+                    <!-- Department Filter -->
+                    <div class="flex flex-wrap justify-center gap-2 mb-12" id="dept-filter">
+                        <button class="px-6 py-2 rounded-full bg-blue-600 text-white font-medium text-sm"
+                            data-dept="all">All</button>
+                        <button
+                            class="px-6 py-2 rounded-full bg-gray-100 text-gray-700 font-medium text-sm hover:bg-gray-200"
+                            data-dept="cse">CSE</button>
+                        <button
+                            class="px-6 py-2 rounded-full bg-gray-100 text-gray-700 font-medium text-sm hover:bg-gray-200"
+                            data-dept="ece">ECE</button>
+                        <button
+                            class="px-6 py-2 rounded-full bg-gray-100 text-gray-700 font-medium text-sm hover:bg-gray-200"
+                            data-dept="eee">EEE</button>
+                        <button
+                            class="px-6 py-2 rounded-full bg-gray-100 text-gray-700 font-medium text-sm hover:bg-gray-200"
+                            data-dept="me">ME</button>
+                        <button
+                            class="px-6 py-2 rounded-full bg-gray-100 text-gray-700 font-medium text-sm hover:bg-gray-200"
+                            data-dept="ce">CE</button>
+                    </div>
+
+                    <!-- Faculty Grid -->
+                    <div id="faculty-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                        <!-- Faculty cards populated via JS -->
+                    </div>
+                </div>
+            </section>
+
+            <!-- Join Us CTA -->
+            <section class="py-16 bg-gradient-to-r from-blue-600 to-indigo-600">
+                <div class="max-w-4xl mx-auto px-4 text-center">
+                    <h2 class="text-3xl font-bold text-white mb-4">Join Our Faculty</h2>
+                    <p class="text-blue-100 mb-8">We're always looking for talented educators to join our team.</p>
+                    <a href="contact/"
+                        class="bg-white text-blue-600 px-8 py-3 rounded-full font-bold hover:bg-blue-50 transition-all inline-flex items-center gap-2">
+                        <i data-lucide="mail" class="w-4 h-4"></i> Contact HR
+                    </a>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer Injected Here -->
+    </div>
 
     <!-- Scripts -->
-    <script src="assets/js/components.js"></script>
+    <script src="js/data.js"></script>
+    <script src="js/components.js"></script>
+    <script>window.rootPath = '';</script>
+    <script src="js/main.js"></script>
+
     <script>
-        // Init Lucide
-        lucide.createIcons();
+        document.addEventListener('DOMContentLoaded', () => {
+            const departments = window.APP_DATA?.departments || [];
+            const facultyGrid = document.getElementById('faculty-grid');
+            const filterBtns = document.querySelectorAll('#dept-filter button');
+
+            // Collect all faculty from all departments
+            let allFaculty = [];
+            departments.forEach(dept => {
+                if (dept.faculty && dept.faculty.length > 0) {
+                    dept.faculty.forEach(f => {
+                        allFaculty.push({
+                            ...f,
+                            department: dept.code,
+                            deptName: dept.name
+                        });
+                    });
+                }
+            });
+
+            function renderFaculty(filter = 'all') {
+                let filtered = filter === 'all'
+                    ? allFaculty
+                    : allFaculty.filter(f => f.department.toLowerCase() === filter);
+
+                if (filtered.length === 0) {
+                    facultyGrid.innerHTML = '<p class="col-span-4 text-center text-gray-500 py-12">No faculty found for this department.</p>';
+                    return;
+                }
+
+                facultyGrid.innerHTML = filtered.map(faculty => `
+                    <div class="bg-white rounded-2xl p-6 border border-gray-100 hover:shadow-lg transition-all group">
+                        <div class="w-20 h-20 bg-gradient-to-br from-blue-100 to-indigo-100 rounded-2xl flex items-center justify-center mb-4 group-hover:from-blue-500 group-hover:to-indigo-500 transition-colors">
+                            <i data-lucide="user" class="w-10 h-10 text-blue-600 group-hover:text-white transition-colors"></i>
+                        </div>
+                        <h4 class="font-bold text-gray-900 mb-1">${faculty.name}</h4>
+                        <p class="text-sm text-blue-600 font-medium mb-1">${faculty.designation}</p>
+                        <p class="text-xs text-gray-500">${faculty.qualification}</p>
+                        <p class="text-xs text-gray-400 mt-2">${faculty.deptName}</p>
+                    </div>
+                `).join('');
+
+                if (window.lucide) {
+                    window.lucide.createIcons();
+                }
+            }
+
+            // Filter button click handler
+            filterBtns.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    filterBtns.forEach(b => {
+                        b.classList.remove('bg-blue-600', 'text-white');
+                        b.classList.add('bg-gray-100', 'text-gray-700');
+                    });
+                    btn.classList.remove('bg-gray-100', 'text-gray-700');
+                    btn.classList.add('bg-blue-600', 'text-white');
+
+                    renderFaculty(btn.dataset.dept);
+                });
+            });
+
+            // Initial render
+            renderFaculty('all');
+        });
     </script>
 </body>
 

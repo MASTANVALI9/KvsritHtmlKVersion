@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us | KVSRIT</title>
+    <meta name="description"
+        content="Get in touch with KVSRIT. Find our address, phone numbers, email, and contact form.">
 
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -24,6 +26,10 @@
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap"
         rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
     <style>
         body {
             font-family: 'Plus Jakarta Sans', sans-serif;
@@ -35,120 +41,195 @@
 </head>
 
 <body class="bg-white text-gray-900">
+    <div id="app">
+        <!-- Header Injected Here -->
 
-    <!-- Navbar Placeholder -->
-    <div id="navbar-placeholder"></div>
+        <main>
+            <!-- Page Header -->
+            <section class="bg-blue-900 text-white py-20 relative overflow-hidden text-center">
+                <div class="max-w-4xl mx-auto px-4 relative z-10">
+                    <nav
+                        class="flex justify-center items-center gap-2 text-blue-300 text-xs font-bold uppercase tracking-widest mb-6">
+                        <a href="index.html" class="hover:text-white transition-colors">Home</a>
+                        <i data-lucide="chevron-right" class="w-3 h-3"></i>
+                        <span class="text-white">Contact</span>
+                    </nav>
+                    <h1 class="text-5xl font-extrabold mb-6">Get In Touch</h1>
+                    <p class="text-lg text-blue-100/80 leading-relaxed">
+                        We'd love to hear from you. Reach out with any questions or inquiries.
+                    </p>
+                </div>
+            </section>
 
-    <main>
-        <!-- Page Header -->
-        <section class="bg-gray-100 py-20">
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <nav class="flex items-center gap-2 text-gray-400 text-xs font-bold uppercase tracking-widest mb-4">
-                    <a href="index.html" class="hover:text-blue-600 transition-colors">Home</a>
-                    <i data-lucide="chevron-right" class="w-3 h-3"></i>
-                    <span class="text-gray-900">Contact Us</span>
-                </nav>
-                <h1 class="text-4xl md:text-5xl font-extrabold text-gray-900">Let's Connect</h1>
-            </div>
-        </section>
-
-        <section class="py-24">
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="grid lg:grid-cols-2 gap-20">
-
-                    <!-- Contact Form -->
-                    <div class="space-y-12">
-                        <div>
-                            <h2 class="text-2xl font-bold mb-6">Send us a Message</h2>
-                            <p class="text-gray-600 text-sm mb-8">Have a specific question? Fill out the form below and
-                                our team will get back to you within 24 hours.</p>
+            <!-- Contact Info Cards -->
+            <section class="py-24">
+                <div class="max-w-7xl mx-auto px-4">
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+                        <!-- Address -->
+                        <div class="bg-gray-50 p-8 rounded-3xl text-center">
+                            <div
+                                class="w-14 h-14 bg-blue-100 rounded-2xl flex items-center justify-center mx-auto mb-6">
+                                <i data-lucide="map-pin" class="w-7 h-7 text-blue-600"></i>
+                            </div>
+                            <h3 class="text-xl font-bold mb-2">Address</h3>
+                            <p class="text-gray-600">Dr. K.V. Subba Reddy Institute of Technology<br>
+                                Dupadu, NH-44<br>
+                                Kurnool, Andhra Pradesh - 518218</p>
                         </div>
-
-                        <form class="space-y-6">
-                            <div class="grid md:grid-cols-2 gap-6">
-                                <div class="space-y-2">
-                                    <label class="text-xs font-bold uppercase tracking-widest text-gray-500">Full
-                                        Name</label>
-                                    <input type="text" placeholder="John Doe"
-                                        class="w-full px-6 py-4 rounded-2xl bg-gray-50 border border-gray-100 focus:border-blue-600 focus:ring-4 focus:ring-blue-100 transition-all outline-none">
-                                </div>
-                                <div class="space-y-2">
-                                    <label class="text-xs font-bold uppercase tracking-widest text-gray-500">Email
-                                        Address</label>
-                                    <input type="email" placeholder="john@example.com"
-                                        class="w-full px-6 py-4 rounded-2xl bg-gray-50 border border-gray-100 focus:border-blue-600 focus:ring-4 focus:ring-blue-100 transition-all outline-none">
-                                </div>
+                        <!-- Phone -->
+                        <div class="bg-gray-50 p-8 rounded-3xl text-center">
+                            <div
+                                class="w-14 h-14 bg-emerald-100 rounded-2xl flex items-center justify-center mx-auto mb-6">
+                                <i data-lucide="phone" class="w-7 h-7 text-emerald-600"></i>
                             </div>
-                            <div class="space-y-2">
-                                <label class="text-xs font-bold uppercase tracking-widest text-gray-500">Subject</label>
-                                <select
-                                    class="w-full px-6 py-4 rounded-2xl bg-gray-50 border border-gray-100 focus:border-blue-600 focus:ring-4 focus:ring-blue-100 transition-all outline-none appearance-none">
-                                    <option>General Inquiry</option>
-                                    <option>Admissions</option>
-                                    <option>Management Quota</option>
-                                    <option>Placements</option>
-                                </select>
+                            <h3 class="text-xl font-bold mb-2">Phone</h3>
+                            <p class="text-gray-600">
+                                <a href="tel:+919100033333" class="hover:text-blue-600">+91 91000 33333</a><br>
+                                <a href="tel:+9108518285559" class="hover:text-blue-600">+91 08518 285559</a>
+                            </p>
+                        </div>
+                        <!-- Email -->
+                        <div class="bg-gray-50 p-8 rounded-3xl text-center">
+                            <div
+                                class="w-14 h-14 bg-purple-100 rounded-2xl flex items-center justify-center mx-auto mb-6">
+                                <i data-lucide="mail" class="w-7 h-7 text-purple-600"></i>
                             </div>
-                            <div class="space-y-2">
-                                <label class="text-xs font-bold uppercase tracking-widest text-gray-500">Message</label>
-                                <textarea rows="6" placeholder="How can we help you?"
-                                    class="w-full px-6 py-4 rounded-2xl bg-gray-50 border border-gray-100 focus:border-blue-600 focus:ring-4 focus:ring-blue-100 transition-all outline-none"></textarea>
-                            </div>
-                            <button type="submit"
-                                class="bg-blue-600 text-white px-10 py-4 rounded-full font-bold hover:bg-blue-700 hover:shadow-xl transition-all w-full md:w-auto">Send
-                                Message</button>
-                        </form>
+                            <h3 class="text-xl font-bold mb-2">Email</h3>
+                            <p class="text-gray-600">
+                                <a href="mailto:office@drkvsrit.ac.in"
+                                    class="hover:text-blue-600">office@drkvsrit.ac.in</a><br>
+                                <a href="mailto:admissions@drkvsrit.ac.in"
+                                    class="hover:text-blue-600">admissions@drkvsrit.ac.in</a>
+                            </p>
+                        </div>
                     </div>
 
-                    <!-- Contact Details & Map -->
-                    <div class="space-y-12">
-                        <div class="grid sm:grid-cols-2 gap-8">
-                            <div class="p-8 bg-blue-50 rounded-[40px] border border-blue-100">
-                                <div
-                                    class="w-12 h-12 rounded-2xl bg-blue-600 text-white flex items-center justify-center mb-6">
-                                    <i data-lucide="phone" class="w-6 h-6"></i></div>
-                                <h4 class="font-bold mb-2">Call Us</h4>
-                                <p class="text-sm text-blue-900">+91 91000 33333</p>
-                            </div>
-                            <div class="p-8 bg-emerald-50 rounded-[40px] border border-emerald-100">
-                                <div
-                                    class="w-12 h-12 rounded-2xl bg-emerald-600 text-white flex items-center justify-center mb-6">
-                                    <i data-lucide="mail" class="w-6 h-6"></i></div>
-                                <h4 class="font-bold mb-2">Email Us</h4>
-                                <p class="text-sm text-emerald-900 uppercase">office@drkvsrit.ac.in</p>
-                            </div>
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                        <!-- Contact Form -->
+                        <div class="bg-white p-8 rounded-3xl border border-gray-200">
+                            <h2 class="text-2xl font-bold mb-6">Send us a Message</h2>
+                            <form
+                                onsubmit="event.preventDefault(); alert('Thank you for your message! This is a demo form.');">
+                                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+                                    <div>
+                                        <label class="block text-sm font-medium text-gray-700 mb-1">First Name</label>
+                                        <input type="text"
+                                            class="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition-all"
+                                            placeholder="John">
+                                    </div>
+                                    <div>
+                                        <label class="block text-sm font-medium text-gray-700 mb-1">Last Name</label>
+                                        <input type="text"
+                                            class="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition-all"
+                                            placeholder="Doe">
+                                    </div>
+                                </div>
+                                <div class="mb-4">
+                                    <label class="block text-sm font-medium text-gray-700 mb-1">Email</label>
+                                    <input type="email"
+                                        class="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition-all"
+                                        placeholder="john@example.com">
+                                </div>
+                                <div class="mb-4">
+                                    <label class="block text-sm font-medium text-gray-700 mb-1">Phone</label>
+                                    <input type="tel"
+                                        class="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition-all"
+                                        placeholder="+91 98765 43210">
+                                </div>
+                                <div class="mb-4">
+                                    <label class="block text-sm font-medium text-gray-700 mb-1">Subject</label>
+                                    <select
+                                        class="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition-all">
+                                        <option>General Inquiry</option>
+                                        <option>Admissions</option>
+                                        <option>Placements</option>
+                                        <option>Academics</option>
+                                        <option>Other</option>
+                                    </select>
+                                </div>
+                                <div class="mb-6">
+                                    <label class="block text-sm font-medium text-gray-700 mb-1">Message</label>
+                                    <textarea rows="4"
+                                        class="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition-all resize-none"
+                                        placeholder="Your message..."></textarea>
+                                </div>
+                                <button type="submit"
+                                    class="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 rounded-xl transition-colors">
+                                    Send Message
+                                </button>
+                            </form>
                         </div>
 
                         <!-- Map -->
-                        <div
-                            class="relative rounded-[40px] overflow-hidden aspect-video bg-gray-100 border border-gray-200">
-                            <!-- In a real project, replace this with an iframe -->
-                            <div class="absolute inset-0 flex items-center justify-center text-center p-8">
-                                <div class="space-y-4">
-                                    <i data-lucide="map-pin" class="w-12 h-12 text-gray-300 mx-auto"></i>
-                                    <p class="text-gray-400 font-bold uppercase tracking-widest text-xs">Google Maps
-                                        Placeholder</p>
-                                    <p class="text-gray-500 text-sm">Dupadu, NH-44, Kurnool, Andhra Pradesh - 518 218
-                                    </p>
-                                </div>
-                            </div>
+                        <div class="bg-gray-100 rounded-3xl overflow-hidden h-[500px]">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3861.2543215012795!2d78.03854917506527!3d15.835614384848344!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bb5dd9f66655555%3A0x5555555555555555!2sDr.%20K.V.%20Subba%20Reddy%20Institute%20of%20Technology!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin"
+                                width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade">
+                            </iframe>
                         </div>
                     </div>
-
                 </div>
-            </div>
-        </section>
-    </main>
+            </section>
 
-    <!-- Footer Placeholder -->
-    <div id="footer-placeholder"></div>
+            <!-- Department Contacts -->
+            <section class="py-24 bg-gray-50">
+                <div class="max-w-7xl mx-auto px-4">
+                    <div class="text-center mb-16">
+                        <h2 class="text-sm font-bold text-blue-600 uppercase tracking-widest mb-4">Directory</h2>
+                        <h3 class="text-4xl font-extrabold text-gray-900">Department Contacts</h3>
+                    </div>
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                        <div class="bg-white p-6 rounded-2xl border border-gray-100">
+                            <h4 class="font-bold text-gray-900 mb-2">Admissions Office</h4>
+                            <p class="text-sm text-gray-600 mb-2">+91 91773 17722</p>
+                            <a href="mailto:admissions@drkvsrit.ac.in"
+                                class="text-sm text-blue-600 hover:underline">admissions@drkvsrit.ac.in</a>
+                        </div>
+                        <div class="bg-white p-6 rounded-2xl border border-gray-100">
+                            <h4 class="font-bold text-gray-900 mb-2">Exam Cell</h4>
+                            <p class="text-sm text-gray-600 mb-2">+91 91107 11440</p>
+                            <a href="mailto:exams@drkvsrit.ac.in"
+                                class="text-sm text-blue-600 hover:underline">exams@drkvsrit.ac.in</a>
+                        </div>
+                        <div class="bg-white p-6 rounded-2xl border border-gray-100">
+                            <h4 class="font-bold text-gray-900 mb-2">Placement Cell</h4>
+                            <p class="text-sm text-gray-600 mb-2">+91 98493 84646</p>
+                            <a href="mailto:tpcell@drkvsrit.ac.in"
+                                class="text-sm text-blue-600 hover:underline">tpcell@drkvsrit.ac.in</a>
+                        </div>
+                        <div class="bg-white p-6 rounded-2xl border border-gray-100">
+                            <h4 class="font-bold text-gray-900 mb-2">Library</h4>
+                            <p class="text-sm text-gray-600 mb-2">+91 12345 67894</p>
+                            <a href="mailto:library@drkvsrit.ac.in"
+                                class="text-sm text-blue-600 hover:underline">library@drkvsrit.ac.in</a>
+                        </div>
+                        <div class="bg-white p-6 rounded-2xl border border-gray-100">
+                            <h4 class="font-bold text-gray-900 mb-2">HOD CSE</h4>
+                            <p class="text-sm text-gray-600 mb-2">+91 98858 83737</p>
+                            <a href="mailto:hod.cse@drkvsrit.ac.in"
+                                class="text-sm text-blue-600 hover:underline">hod.cse@drkvsrit.ac.in</a>
+                        </div>
+                        <div class="bg-white p-6 rounded-2xl border border-gray-100">
+                            <h4 class="font-bold text-gray-900 mb-2">Admin Office</h4>
+                            <p class="text-sm text-gray-600 mb-2">+91 08518 285559</p>
+                            <a href="mailto:admin@drkvsrit.ac.in"
+                                class="text-sm text-blue-600 hover:underline">admin@drkvsrit.ac.in</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer Injected Here -->
+    </div>
 
     <!-- Scripts -->
-    <script src="assets/js/components.js"></script>
-    <script>
-        // Init Lucide
-        lucide.createIcons();
-    </script>
+    <script src="js/data.js"></script>
+    <script src="js/components.js"></script>
+    <script>window.rootPath = '';</script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>
