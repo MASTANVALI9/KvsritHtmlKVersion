@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facilities | KVSRIT</title>
+    <meta name="description"
+        content="World-class infrastructure and amenities at KVSRIT: lush green campus, modern labs, digital library, hostels, and sports complex.">
+
+    <!-- Tailwind CSS Play CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        if (typeof tailwind !== 'undefined') {
+            tailwind.config = {
+                theme: {
+                    extend: {
+                        colors: {
+                            primary: {
+                                50: '#eff6ff',
+                                100: '#dbeafe',
+                                200: '#bfdbfe',
+                                300: '#93c5fd',
+                                400: '#60a5fa',
+                                500: '#3b82f6',
+                                600: '#2563eb',
+                                700: '#1d4ed8',
+                                800: '#1e40af',
+                                900: '#1e3a8a',
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../css/style.css">
+
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+
+<body>
+    <div id="app">
+        <!-- Header Injected Here -->
+
+        <main>
+            <div class="bg-gray-50 min-h-screen">
+                <!-- Header -->
+                <div class="bg-blue-900 text-white py-16">
+                    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                        <h1 class="text-4xl font-bold mb-4">Campus Facilities</h1>
+                        <p class="text-blue-100 text-lg max-w-2xl">
+                            Experience a vibrant campus life with world-class infrastructure and amenities.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Content -->
+                <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+                    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                        <!-- Central Library -->
+                        <div
+                            class="bg-white rounded-lg shadow-sm overflow-hidden hover:shadow-md transition-shadow group">
+                            <div
+                                class="h-48 bg-gray-200 flex items-center justify-center group-hover:bg-blue-50 transition-colors">
+                                <i data-lucide="library"
+                                    class="w-12 h-12 text-gray-400 group-hover:text-blue-600 transition-colors"></i>
+                            </div>
+                            <div class="p-6">
+                                <h3 class="text-xl font-bold text-gray-900 mb-2">Central Library</h3>
+                                <p class="text-gray-600">A vast collection of books, journals, and digital resources to
+                                    support academic research and learning.</p>
+                            </div>
+                        </div>
+
+                        <!-- Computer Labs -->
+                        <div
+                            class="bg-white rounded-lg shadow-sm overflow-hidden hover:shadow-md transition-shadow group">
+                            <div
+                                class="h-48 bg-gray-200 flex items-center justify-center group-hover:bg-blue-50 transition-colors">
+                                <i data-lucide="monitor"
+                                    class="w-12 h-12 text-gray-400 group-hover:text-blue-600 transition-colors"></i>
+                            </div>
+                            <div class="p-6">
+                                <h3 class="text-xl font-bold text-gray-900 mb-2">Computer Labs</h3>
+                                <p class="text-gray-600">State-of-the-art computer centers with high-speed internet and
+                                    latest software for practical learning.</p>
+                            </div>
+                        </div>
+
+                        <!-- Hostel Facility -->
+                        <div
+                            class="bg-white rounded-lg shadow-sm overflow-hidden hover:shadow-md transition-shadow group">
+                            <div
+                                class="h-48 bg-gray-200 flex items-center justify-center group-hover:bg-blue-50 transition-colors">
+                                <i data-lucide="bed"
+                                    class="w-12 h-12 text-gray-400 group-hover:text-blue-600 transition-colors"></i>
+                            </div>
+                            <div class="p-6">
+                                <h3 class="text-xl font-bold text-gray-900 mb-2">Hostel Facility</h3>
+                                <p class="text-gray-600">Separate hostels for boys and girls with comfortable
+                                    accommodation and nutritious food.</p>
+                            </div>
+                        </div>
+
+                        <!-- Transportation -->
+                        <div
+                            class="bg-white rounded-lg shadow-sm overflow-hidden hover:shadow-md transition-shadow group">
+                            <div
+                                class="h-48 bg-gray-200 flex items-center justify-center group-hover:bg-blue-50 transition-colors">
+                                <i data-lucide="bus"
+                                    class="w-12 h-12 text-gray-400 group-hover:text-blue-600 transition-colors"></i>
+                            </div>
+                            <div class="p-6">
+                                <h3 class="text-xl font-bold text-gray-900 mb-2">Transportation</h3>
+                                <p class="text-gray-600">Fleet of buses connecting the campus to various parts of
+                                    Kurnool city and surrounding areas.</p>
+                            </div>
+                        </div>
+
+                        <!-- Cafeteria -->
+                        <div
+                            class="bg-white rounded-lg shadow-sm overflow-hidden hover:shadow-md transition-shadow group">
+                            <div
+                                class="h-48 bg-gray-200 flex items-center justify-center group-hover:bg-blue-50 transition-colors">
+                                <i data-lucide="coffee"
+                                    class="w-12 h-12 text-gray-400 group-hover:text-blue-600 transition-colors"></i>
+                            </div>
+                            <div class="p-6">
+                                <h3 class="text-xl font-bold text-gray-900 mb-2">Cafeteria</h3>
+                                <p class="text-gray-600">Hygienic and spacious cafeteria serving a variety of snacks,
+                                    beverages, and meals.</p>
+                            </div>
+                        </div>
+
+                        <!-- Sports & Gym -->
+                        <div
+                            class="bg-white rounded-lg shadow-sm overflow-hidden hover:shadow-md transition-shadow group">
+                            <div
+                                class="h-48 bg-gray-200 flex items-center justify-center group-hover:bg-blue-50 transition-colors">
+                                <i data-lucide="dumbbell"
+                                    class="w-12 h-12 text-gray-400 group-hover:text-blue-600 transition-colors"></i>
+                            </div>
+                            <div class="p-6">
+                                <h3 class="text-xl font-bold text-gray-900 mb-2">Sports & Gym</h3>
+                                <p class="text-gray-600">Facilities for indoor and outdoor sports, along with a
+                                    well-equipped gymnasium for fitness enthusiasts.</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- Footer Injected Here -->
+    </div>
+
+    <!-- Core Scripts -->
+    <script src="../js/data.js"></script>
+    <script src="../js/components.js"></script>
+    <script>window.rootPath = '../';</script>
+    <script src="../js/main.js"></script>
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+
+</html>

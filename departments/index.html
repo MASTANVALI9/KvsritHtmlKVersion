@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Academic Departments | KVSRIT</title>
+    <meta name="description"
+        content="Explore the academic departments at KVSRIT: CSE, ECE, EEE, Civil, Mechanical, AI, H&S, MBA, and MCA.">
+
+    <!-- Tailwind CSS Play CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        if (typeof tailwind !== 'undefined') {
+            tailwind.config = {
+                theme: {
+                    extend: {
+                        colors: {
+                            primary: {
+                                50: '#eff6ff',
+                                100: '#dbeafe',
+                                200: '#bfdbfe',
+                                300: '#93c5fd',
+                                400: '#60a5fa',
+                                500: '#3b82f6',
+                                600: '#2563eb',
+                                700: '#1d4ed8',
+                                800: '#1e40af',
+                                900: '#1e3a8a',
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../css/style.css">
+
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+
+<body>
+    <div id="app">
+        <!-- Header Injected Here -->
+
+        <main>
+            <div class="min-h-screen bg-gray-50 py-12">
+                <div class="container mx-auto px-4">
+                    <div class="text-center mb-16">
+                        <h1 class="text-4xl font-bold text-gray-900 mb-4">Academic Departments</h1>
+                        <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+                            Our departments are committed to providing quality education and fostering research and
+                            innovation.
+                        </p>
+                    </div>
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                        <!-- Items injected dynamically or hardcoded based on data.js -->
+                        <!-- CSE -->
+                        <a href="departments/cse.html"
+                            class="group bg-white rounded-xl shadow-sm hover:shadow-xl transition-all duration-300 overflow-hidden border border-gray-100">
+                            <div
+                                class="h-48 bg-gradient-to-r from-blue-600 to-indigo-700 relative flex items-center justify-center">
+                                <div class="text-white text-center p-6">
+                                    <i data-lucide="cpu" class="w-12 h-12 mx-auto mb-3 opacity-80"></i>
+                                    <h3 class="text-2xl font-bold">CSE</h3>
+                                </div>
+                            </div>
+                            <div class="p-6">
+                                <h2
+                                    class="text-xl font-bold text-gray-900 mb-3 group-hover:text-blue-600 transition-colors">
+                                    Computer Science and Engineering
+                                </h2>
+                                <p class="text-gray-600 mb-6 line-clamp-3 text-sm">
+                                    The Department of Computer Science and Engineering was established to provide
+                                    world-class education in computing and technology.
+                                </p>
+                                <div class="flex items-center justify-between text-sm text-gray-500 border-t pt-4">
+                                    <div class="flex items-center gap-2">
+                                        <i data-lucide="users" class="w-4 h-4"></i>
+                                        <span>Faculty</span>
+                                    </div>
+                                    <div class="flex items-center gap-2">
+                                        <i data-lucide="book-open" class="w-4 h-4"></i>
+                                        <span>Curriculum</span>
+                                    </div>
+                                    <div class="flex items-center text-blue-600 font-medium">
+                                        Explore <i data-lucide="arrow-right"
+                                            class="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+
+                        <!-- ECE -->
+                        <a href="departments/ece.html"
+                            class="group bg-white rounded-xl shadow-sm hover:shadow-xl transition-all duration-300 overflow-hidden border border-gray-100">
+                            <div
+                                class="h-48 bg-gradient-to-r from-green-600 to-emerald-700 relative flex items-center justify-center">
+                                <div class="text-white text-center p-6">
+                                    <i data-lucide="radio" class="w-12 h-12 mx-auto mb-3 opacity-80"></i>
+                                    <h3 class="text-2xl font-bold">ECE</h3>
+                                </div>
+                            </div>
+                            <div class="p-6">
+                                <h2
+                                    class="text-xl font-bold text-gray-900 mb-3 group-hover:text-blue-600 transition-colors">
+                                    Electronics and Communication Engineering
+                                </h2>
+                                <p class="text-gray-600 mb-6 line-clamp-3 text-sm">
+                                    The ECE department focuses on Electronics, Communication, and Signal Processing.
+                                </p>
+                                <div class="flex items-center justify-between text-sm text-gray-500 border-t pt-4">
+                                    <div class="flex items-center gap-2">
+                                        <i data-lucide="users" class="w-4 h-4"></i>
+                                        <span>Faculty</span>
+                                    </div>
+                                    <div class="flex items-center gap-2">
+                                        <i data-lucide="book-open" class="w-4 h-4"></i>
+                                        <span>Curriculum</span>
+                                    </div>
+                                    <div class="flex items-center text-blue-600 font-medium">
+                                        Explore <i data-lucide="arrow-right"
+                                            class="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+
+                        <!-- EEE -->
+                        <a href="departments/eee.html"
+                            class="group bg-white rounded-xl shadow-sm hover:shadow-xl transition-all duration-300 overflow-hidden border border-gray-100">
+                            <div
+                                class="h-48 bg-gradient-to-r from-yellow-500 to-orange-600 relative flex items-center justify-center">
+                                <div class="text-white text-center p-6">
+                                    <i data-lucide="zap" class="w-12 h-12 mx-auto mb-3 opacity-80"></i>
+                                    <h3 class="text-2xl font-bold">EEE</h3>
+                                </div>
+                            </div>
+                            <div class="p-6">
+                                <h2
+                                    class="text-xl font-bold text-gray-900 mb-3 group-hover:text-blue-600 transition-colors">
+                                    Electrical and Electronics Engineering
+                                </h2>
+                                <p class="text-gray-600 mb-6 line-clamp-3 text-sm">
+                                    The EEE department provides a strong foundation in electrical engineering and modern
+                                    electronics technologies.
+                                </p>
+                                <div class="flex items-center justify-between text-sm text-gray-500 border-t pt-4">
+                                    <div class="flex items-center gap-2">
+                                        <i data-lucide="users" class="w-4 h-4"></i>
+                                        <span>Faculty</span>
+                                    </div>
+                                    <div class="flex items-center gap-2">
+                                        <i data-lucide="book-open" class="w-4 h-4"></i>
+                                        <span>Curriculum</span>
+                                    </div>
+                                    <div class="flex items-center text-blue-600 font-medium">
+                                        Explore <i data-lucide="arrow-right"
+                                            class="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+
+                        <!-- Civil -->
+                        <a href="departments/ce.html"
+                            class="group bg-white rounded-xl shadow-sm hover:shadow-xl transition-all duration-300 overflow-hidden border border-gray-100">
+                            <div
+                                class="h-48 bg-gradient-to-r from-orange-600 to-red-700 relative flex items-center justify-center">
+                                <div class="text-white text-center p-6">
+                                    <i data-lucide="hard-hat" class="w-12 h-12 mx-auto mb-3 opacity-80"></i>
+                                    <h3 class="text-2xl font-bold">CE</h3>
+                                </div>
+                            </div>
+                            <div class="p-6">
+                                <h2
+                                    class="text-xl font-bold text-gray-900 mb-3 group-hover:text-blue-600 transition-colors">
+                                    Civil Engineering
+                                </h2>
+                                <p class="text-gray-600 mb-6 line-clamp-3 text-sm">
+                                    The Civil Engineering department is dedicated to creating sustainable infrastructure
+                                    and shaping the built environment.
+                                </p>
+                                <div class="flex items-center justify-between text-sm text-gray-500 border-t pt-4">
+                                    <div class="flex items-center gap-2">
+                                        <i data-lucide="users" class="w-4 h-4"></i>
+                                        <span>Faculty</span>
+                                    </div>
+                                    <div class="flex items-center gap-2">
+                                        <i data-lucide="book-open" class="w-4 h-4"></i>
+                                        <span>Curriculum</span>
+                                    </div>
+                                    <div class="flex items-center text-blue-600 font-medium">
+                                        Explore <i data-lucide="arrow-right"
+                                            class="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+
+                        <!-- Mechanical -->
+                        <a href="departments/me.html"
+                            class="group bg-white rounded-xl shadow-sm hover:shadow-xl transition-all duration-300 overflow-hidden border border-gray-100">
+                            <div
+                                class="h-48 bg-gradient-to-r from-gray-600 to-gray-800 relative flex items-center justify-center">
+                                <div class="text-white text-center p-6">
+                                    <i data-lucide="settings" class="w-12 h-12 mx-auto mb-3 opacity-80"></i>
+                                    <h3 class="text-2xl font-bold">ME</h3>
+                                </div>
+                            </div>
+                            <div class="p-6">
+                                <h2
+                                    class="text-xl font-bold text-gray-900 mb-3 group-hover:text-blue-600 transition-colors">
+                                    Mechanical Engineering
+                                </h2>
+                                <p class="text-gray-600 mb-6 line-clamp-3 text-sm">
+                                    The Mechanical Engineering department fosters innovation in design, manufacturing,
+                                    and thermal sciences.
+                                </p>
+                                <div class="flex items-center justify-between text-sm text-gray-500 border-t pt-4">
+                                    <div class="flex items-center gap-2">
+                                        <i data-lucide="users" class="w-4 h-4"></i>
+                                        <span>Faculty</span>
+                                    </div>
+                                    <div class="flex items-center gap-2">
+                                        <i data-lucide="book-open" class="w-4 h-4"></i>
+                                        <span>Curriculum</span>
+                                    </div>
+                                    <div class="flex items-center text-blue-600 font-medium">
+                                        Explore <i data-lucide="arrow-right"
+                                            class="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+
+                        <!-- H&S -->
+                        <a href="departments/hs.html"
+                            class="group bg-white rounded-xl shadow-sm hover:shadow-xl transition-all duration-300 overflow-hidden border border-gray-100">
+                            <div
+                                class="h-48 bg-gradient-to-r from-teal-600 to-cyan-700 relative flex items-center justify-center">
+                                <div class="text-white text-center p-6">
+                                    <i data-lucide="microscope" class="w-12 h-12 mx-auto mb-3 opacity-80"></i>
+                                    <h3 class="text-2xl font-bold">H&S</h3>
+                                </div>
+                            </div>
+                            <div class="p-6">
+                                <h2
+                                    class="text-xl font-bold text-gray-900 mb-3 group-hover:text-blue-600 transition-colors">
+                                    Humanities & Sciences
+                                </h2>
+                                <p class="text-gray-600 mb-6 line-clamp-3 text-sm">
+                                    The H&S department provides the foundation for engineering education with
+                                    mathematics, physics, and communication skills.
+                                </p>
+                                <div class="flex items-center justify-between text-sm text-gray-500 border-t pt-4">
+                                    <div class="flex items-center gap-2">
+                                        <i data-lucide="users" class="w-4 h-4"></i>
+                                        <span>Faculty</span>
+                                    </div>
+                                    <div class="flex items-center gap-2">
+                                        <i data-lucide="book-open" class="w-4 h-4"></i>
+                                        <span>Curriculum</span>
+                                    </div>
+                                    <div class="flex items-center text-blue-600 font-medium">
+                                        Explore <i data-lucide="arrow-right"
+                                            class="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+
+                        <!-- MBA -->
+                        <a href="departments/mba.html"
+                            class="group bg-white rounded-xl shadow-sm hover:shadow-xl transition-all duration-300 overflow-hidden border border-gray-100">
+                            <div
+                                class="h-48 bg-gradient-to-r from-purple-600 to-indigo-700 relative flex items-center justify-center">
+                                <div class="text-white text-center p-6">
+                                    <i data-lucide="briefcase" class="w-12 h-12 mx-auto mb-3 opacity-80"></i>
+                                    <h3 class="text-2xl font-bold">MBA</h3>
+                                </div>
+                            </div>
+                            <div class="p-6">
+                                <h2
+                                    class="text-xl font-bold text-gray-900 mb-3 group-hover:text-blue-600 transition-colors">
+                                    Master of Business Administration
+                                </h2>
+                                <p class="text-gray-600 mb-6 line-clamp-3 text-sm">
+                                    Developing leadership and management skills for the corporate world.
+                                </p>
+                                <div class="flex items-center justify-between text-sm text-gray-500 border-t pt-4">
+                                    <div class="flex items-center gap-2">
+                                        <i data-lucide="users" class="w-4 h-4"></i>
+                                        <span>Faculty</span>
+                                    </div>
+                                    <div class="flex items-center gap-2">
+                                        <i data-lucide="book-open" class="w-4 h-4"></i>
+                                        <span>Curriculum</span>
+                                    </div>
+                                    <div class="flex items-center text-blue-600 font-medium">
+                                        Explore <i data-lucide="arrow-right"
+                                            class="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+
+                        <!-- MCA -->
+                        <a href="departments/mca.html"
+                            class="group bg-white rounded-xl shadow-sm hover:shadow-xl transition-all duration-300 overflow-hidden border border-gray-100">
+                            <div
+                                class="h-48 bg-gradient-to-r from-pink-600 to-rose-700 relative flex items-center justify-center">
+                                <div class="text-white text-center p-6">
+                                    <i data-lucide="code-2" class="w-12 h-12 mx-auto mb-3 opacity-80"></i>
+                                    <h3 class="text-2xl font-bold">MCA</h3>
+                                </div>
+                            </div>
+                            <div class="p-6">
+                                <h2
+                                    class="text-xl font-bold text-gray-900 mb-3 group-hover:text-blue-600 transition-colors">
+                                    Master of Computer Applications
+                                </h2>
+                                <p class="text-gray-600 mb-6 line-clamp-3 text-sm">
+                                    Advanced studies in computer applications and software development.
+                                </p>
+                                <div class="flex items-center justify-between text-sm text-gray-500 border-t pt-4">
+                                    <div class="flex items-center gap-2">
+                                        <i data-lucide="users" class="w-4 h-4"></i>
+                                        <span>Faculty</span>
+                                    </div>
+                                    <div class="flex items-center gap-2">
+                                        <i data-lucide="book-open" class="w-4 h-4"></i>
+                                        <span>Curriculum</span>
+                                    </div>
+                                    <div class="flex items-center text-blue-600 font-medium">
+                                        Explore <i data-lucide="arrow-right"
+                                            class="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+
+                        <!-- AI -->
+                        <a href="departments/ai.html"
+                            class="group bg-white rounded-xl shadow-sm hover:shadow-xl transition-all duration-300 overflow-hidden border border-gray-100">
+                            <div
+                                class="h-48 bg-gradient-to-r from-violet-600 to-fuchsia-700 relative flex items-center justify-center">
+                                <div class="text-white text-center p-6">
+                                    <i data-lucide="brain-circuit" class="w-12 h-12 mx-auto mb-3 opacity-80"></i>
+                                    <h3 class="text-2xl font-bold">AI</h3>
+                                </div>
+                            </div>
+                            <div class="p-6">
+                                <h2
+                                    class="text-xl font-bold text-gray-900 mb-3 group-hover:text-blue-600 transition-colors">
+                                    Artificial Intelligence
+                                </h2>
+                                <p class="text-gray-600 mb-6 line-clamp-3 text-sm">
+                                    The Department of Artificial Intelligence focuses on creating intelligent systems
+                                    and advanced problem-solving methodologies.
+                                </p>
+                                <div class="flex items-center justify-between text-sm text-gray-500 border-t pt-4">
+                                    <div class="flex items-center gap-2">
+                                        <i data-lucide="users" class="w-4 h-4"></i>
+                                        <span>Faculty</span>
+                                    </div>
+                                    <div class="flex items-center gap-2">
+                                        <i data-lucide="book-open" class="w-4 h-4"></i>
+                                        <span>Curriculum</span>
+                                    </div>
+                                    <div class="flex items-center text-blue-600 font-medium">
+                                        Explore <i data-lucide="arrow-right"
+                                            class="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- Footer Injected Here -->
+    </div>
+
+    <!-- Core Scripts -->
+    <script src="../js/data.js"></script>
+    <script src="../js/components.js"></script>
+    <script>window.rootPath = '../';</script>
+    <script src="../js/main.js"></script>
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+
+</html>

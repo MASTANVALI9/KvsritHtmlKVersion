@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Courses Offered - KVSRIT</title>
+    <meta name="description" content="Explore the undergraduate and postgraduate courses offered at KVSRIT.">
+
+    <!-- Tailwind CSS Play CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        if (typeof tailwind !== 'undefined') {
+            tailwind.config = {
+                theme: {
+                    extend: {
+                        colors: {
+                            primary: {
+                                50: '#eff6ff',
+                                100: '#dbeafe',
+                                200: '#bfdbfe',
+                                300: '#93c5fd',
+                                400: '#60a5fa',
+                                500: '#3b82f6',
+                                600: '#2563eb',
+                                700: '#1d4ed8',
+                                800: '#1e40af',
+                                900: '#1e3a8a',
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../css/style.css">
+
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+
+<body>
+    <div id="app">
+        <!-- Header Injected Here -->
+
+        <main>
+            <div class="min-h-screen bg-gray-50">
+                <!-- Hero Section -->
+                <div class="bg-gradient-to-r from-blue-900 to-indigo-900 text-white py-20">
+                    <div class="container mx-auto px-4">
+                        <div class="max-w-4xl">
+                            <h1 class="text-4xl md:text-5xl font-bold mb-6">Courses Offered</h1>
+                            <p class="text-xl text-blue-100 leading-relaxed max-w-3xl">
+                                Discover our comprehensive range of undergraduate and postgraduate programs designed to
+                                shape future leaders.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container mx-auto px-4 py-12">
+
+                    <!-- Undergraduate Programs -->
+                    <section class="mb-16">
+                        <div class="flex items-center gap-3 mb-8">
+                            <div
+                                class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center text-blue-600">
+                                <i data-lucide="graduation-cap" class="w-6 h-6"></i>
+                            </div>
+                            <div>
+                                <h2 class="text-3xl font-bold text-gray-900">Undergraduate Programs (B.Tech)</h2>
+                                <p class="text-gray-600">4-Year Full-Time Degrees</p>
+                            </div>
+                        </div>
+
+                        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                            <!-- CSE -->
+                            <div
+                                class="bg-white rounded-xl shadow-sm border border-gray-100 p-6 hover:shadow-md transition-shadow group">
+                                <div
+                                    class="w-12 h-12 bg-blue-50 rounded-lg flex items-center justify-center text-blue-600 mb-4 group-hover:bg-blue-600 group-hover:text-white transition-colors">
+                                    <i data-lucide="code" class="w-6 h-6"></i>
+                                </div>
+                                <h3 class="text-xl font-bold text-gray-900 mb-2">Computer Science & Engineering</h3>
+                                <p class="text-gray-600 mb-4 text-sm">Focuses on software development, algorithms, and
+                                    computer systems.</p>
+                                <div class="flex items-center justify-between text-sm">
+                                    <span class="bg-gray-100 px-3 py-1 rounded-full text-gray-700 font-medium">180
+                                        Seats</span>
+                                    <a href="departments/cse.html"
+                                        class="text-blue-600 font-medium hover:underline">Details &rarr;</a>
+                                </div>
+                            </div>
+
+                            <!-- ECE -->
+                            <div
+                                class="bg-white rounded-xl shadow-sm border border-gray-100 p-6 hover:shadow-md transition-shadow group">
+                                <div
+                                    class="w-12 h-12 bg-green-50 rounded-lg flex items-center justify-center text-green-600 mb-4 group-hover:bg-green-600 group-hover:text-white transition-colors">
+                                    <i data-lucide="cpu" class="w-6 h-6"></i>
+                                </div>
+                                <h3 class="text-xl font-bold text-gray-900 mb-2">Electronics & Communication</h3>
+                                <p class="text-gray-600 mb-4 text-sm">Deals with electronic devices, communication
+                                    systems, and signal processing.</p>
+                                <div class="flex items-center justify-between text-sm">
+                                    <span class="bg-gray-100 px-3 py-1 rounded-full text-gray-700 font-medium">120
+                                        Seats</span>
+                                    <a href="departments/ece.html"
+                                        class="text-blue-600 font-medium hover:underline">Details &rarr;</a>
+                                </div>
+                            </div>
+
+                            <!-- EEE -->
+                            <div
+                                class="bg-white rounded-xl shadow-sm border border-gray-100 p-6 hover:shadow-md transition-shadow group">
+                                <div
+                                    class="w-12 h-12 bg-yellow-50 rounded-lg flex items-center justify-center text-yellow-600 mb-4 group-hover:bg-yellow-600 group-hover:text-white transition-colors">
+                                    <i data-lucide="zap" class="w-6 h-6"></i>
+                                </div>
+                                <h3 class="text-xl font-bold text-gray-900 mb-2">Electrical & Electronics</h3>
+                                <p class="text-gray-600 mb-4 text-sm">Covers power systems, control engineering, and
+                                    renewable energy.</p>
+                                <div class="flex items-center justify-between text-sm">
+                                    <span class="bg-gray-100 px-3 py-1 rounded-full text-gray-700 font-medium">60
+                                        Seats</span>
+                                    <a href="departments/eee.html"
+                                        class="text-blue-600 font-medium hover:underline">Details &rarr;</a>
+                                </div>
+                            </div>
+
+                            <!-- Civil -->
+                            <div
+                                class="bg-white rounded-xl shadow-sm border border-gray-100 p-6 hover:shadow-md transition-shadow group">
+                                <div
+                                    class="w-12 h-12 bg-orange-50 rounded-lg flex items-center justify-center text-orange-600 mb-4 group-hover:bg-orange-600 group-hover:text-white transition-colors">
+                                    <i data-lucide="building" class="w-6 h-6"></i>
+                                </div>
+                                <h3 class="text-xl font-bold text-gray-900 mb-2">Civil Engineering</h3>
+                                <p class="text-gray-600 mb-4 text-sm">Planning, design, and construction of
+                                    infrastructure projects.</p>
+                                <div class="flex items-center justify-between text-sm">
+                                    <span class="bg-gray-100 px-3 py-1 rounded-full text-gray-700 font-medium">60
+                                        Seats</span>
+                                    <a href="departments/ce.html"
+                                        class="text-blue-600 font-medium hover:underline">Details &rarr;</a>
+                                </div>
+                            </div>
+
+                            <!-- Mechanical -->
+                            <div
+                                class="bg-white rounded-xl shadow-sm border border-gray-100 p-6 hover:shadow-md transition-shadow group">
+                                <div
+                                    class="w-12 h-12 bg-red-50 rounded-lg flex items-center justify-center text-red-600 mb-4 group-hover:bg-red-600 group-hover:text-white transition-colors">
+                                    <i data-lucide="settings" class="w-6 h-6"></i>
+                                </div>
+                                <h3 class="text-xl font-bold text-gray-900 mb-2">Mechanical Engineering</h3>
+                                <p class="text-gray-600 mb-4 text-sm">Design and manufacturing of mechanical systems and
+                                    thermal engineering.</p>
+                                <div class="flex items-center justify-between text-sm">
+                                    <span class="bg-gray-100 px-3 py-1 rounded-full text-gray-700 font-medium">60
+                                        Seats</span>
+                                    <a href="departments/me.html"
+                                        class="text-blue-600 font-medium hover:underline">Details &rarr;</a>
+                                </div>
+                            </div>
+
+                            <!-- AI -->
+                            <div
+                                class="bg-white rounded-xl shadow-sm border border-gray-100 p-6 hover:shadow-md transition-shadow group">
+                                <div
+                                    class="w-12 h-12 bg-purple-50 rounded-lg flex items-center justify-center text-purple-600 mb-4 group-hover:bg-purple-600 group-hover:text-white transition-colors">
+                                    <i data-lucide="brain-circuit" class="w-6 h-6"></i>
+                                </div>
+                                <h3 class="text-xl font-bold text-gray-900 mb-2">Artificial Intelligence</h3>
+                                <p class="text-gray-600 mb-4 text-sm">Cutting-edge program focusing on AI, machine
+                                    learning, and data science.</p>
+                                <div class="flex items-center justify-between text-sm">
+                                    <span class="bg-gray-100 px-3 py-1 rounded-full text-gray-700 font-medium">60
+                                        Seats</span>
+                                    <a href="departments/ai.html"
+                                        class="text-blue-600 font-medium hover:underline">Details &rarr;</a>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Postgraduate Programs -->
+                    <section>
+                        <div class="flex items-center gap-3 mb-8">
+                            <div
+                                class="w-12 h-12 bg-indigo-100 rounded-full flex items-center justify-center text-indigo-600">
+                                <i data-lucide="book-open" class="w-6 h-6"></i>
+                            </div>
+                            <div>
+                                <h2 class="text-3xl font-bold text-gray-900">Postgraduate Programs</h2>
+                                <p class="text-gray-600">2-Year Full-Time Degrees</p>
+                            </div>
+                        </div>
+
+                        <div class="grid md:grid-cols-2 lg:grid-cols-2 gap-6">
+                            <!-- MBA -->
+                            <div
+                                class="bg-white rounded-xl shadow-sm border border-gray-100 p-6 hover:shadow-md transition-shadow group">
+                                <div
+                                    class="w-12 h-12 bg-indigo-50 rounded-lg flex items-center justify-center text-indigo-600 mb-4 group-hover:bg-indigo-600 group-hover:text-white transition-colors">
+                                    <i data-lucide="briefcase" class="w-6 h-6"></i>
+                                </div>
+                                <h3 class="text-xl font-bold text-gray-900 mb-2">Master of Business Administration</h3>
+                                <p class="text-gray-600 mb-4 text-sm">Prepares students for management roles with
+                                    specializations in Finance, HR, and Marketing.</p>
+                                <div class="flex items-center justify-between text-sm">
+                                    <span class="bg-gray-100 px-3 py-1 rounded-full text-gray-700 font-medium">120
+                                        Seats</span>
+                                    <a href="departments/mba.html"
+                                        class="text-blue-600 font-medium hover:underline">Details &rarr;</a>
+                                </div>
+                            </div>
+
+                            <!-- MCA -->
+                            <div
+                                class="bg-white rounded-xl shadow-sm border border-gray-100 p-6 hover:shadow-md transition-shadow group">
+                                <div
+                                    class="w-12 h-12 bg-teal-50 rounded-lg flex items-center justify-center text-teal-600 mb-4 group-hover:bg-teal-600 group-hover:text-white transition-colors">
+                                    <i data-lucide="monitor" class="w-6 h-6"></i>
+                                </div>
+                                <h3 class="text-xl font-bold text-gray-900 mb-2">Master of Computer Applications</h3>
+                                <p class="text-gray-600 mb-4 text-sm">Advanced computer applications and software
+                                    development program.</p>
+                                <div class="flex items-center justify-between text-sm">
+                                    <span class="bg-gray-100 px-3 py-1 rounded-full text-gray-700 font-medium">60
+                                        Seats</span>
+                                    <a href="departments/mca.html"
+                                        class="text-blue-600 font-medium hover:underline">Details &rarr;</a>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                </div>
+            </div>
+        </main>
+
+        <!-- Footer Injected Here -->
+    </div>
+
+    <!-- Core Scripts -->
+    <script src="../js/data.js"></script>
+    <script src="../js/components.js"></script>
+    <script>window.rootPath = '../';</script>
+    <script src="../js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSE (AI & ML) | KVSRIT Department</title>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#1e3a8a',
+                        secondary: '#dc2626',
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+        }
+    </style>
+
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+
+<body class="bg-white text-gray-900">
+
+    <!-- Navbar Placeholder -->
+    <div id="navbar-placeholder"></div>
+
+    <main>
+        <!-- Department Header -->
+        <section class="bg-blue-900 text-white py-20 relative overflow-hidden">
+            <div class="absolute top-0 right-0 w-1/2 h-full bg-blue-800 skew-x-12 transform translate-x-20 opacity-20">
+            </div>
+            <div class="max-w-7xl mx-auto px-4 relative z-10">
+                <div class="flex flex-col md:flex-row justify-between items-center gap-8">
+                    <div class="max-w-3xl">
+                        <nav
+                            class="flex items-center gap-2 text-blue-300 text-xs font-bold uppercase tracking-widest mb-6">
+                            <a href="../index.html" class="hover:text-white transition-colors">Home</a>
+                            <i data-lucide="chevron-right" class="w-3 h-3"></i>
+                            <span>Departments</span>
+                            <i data-lucide="chevron-right" class="w-3 h-3"></i>
+                            <span class="text-white">CSE (AI & ML)</span>
+                        </nav>
+                        <h1 class="text-4xl md:text-6xl font-extrabold mb-6 leading-tight">Computer Science &
+                            Engineering <br><span class="text-blue-400 font-medium">(Artificial Intelligence & Machine
+                                Learning)</span></h1>
+                        <p class="text-lg text-blue-100/80 leading-relaxed max-w-2xl">
+                            Empowering students with advanced knowledge in AI algorithms, neural networks, and machine
+                            learning to solve real-world complex problems.
+                        </p>
+                    </div>
+                    <div class="hidden lg:block">
+                        <div class="bg-white/10 backdrop-blur-md p-8 rounded-3xl border border-white/20">
+                            <div class="text-5xl font-extrabold text-white mb-2">120</div>
+                            <div class="text-blue-200 text-sm font-bold uppercase tracking-widest">Intake Capacity</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Dept Vision & Mission -->
+        <section class="py-24">
+            <div class="max-w-7xl mx-auto px-4">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-16">
+                    <div class="space-y-8">
+                        <div>
+                            <h2 class="text-sm font-bold text-blue-600 uppercase tracking-widest mb-4">Our Vision</h2>
+                            <p class="text-2xl font-bold text-gray-900 italic leading-relaxed">
+                                "To be a center of excellence in Artificial Intelligence & Machine Learning by imparting
+                                high-quality education and fostering research innovation."
+                            </p>
+                        </div>
+                        <div class="space-y-4">
+                            <h2 class="text-sm font-bold text-blue-600 uppercase tracking-widest mb-4">Core Focus Areas
+                            </h2>
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                                <div class="flex items-center gap-3 p-4 bg-gray-50 rounded-xl">
+                                    <div class="w-8 h-8 rounded-full bg-blue-100 flex items-center justify-center"><i
+                                            data-lucide="zap" class="w-4 h-4 text-blue-600"></i></div>
+                                    <span class="font-semibold text-sm">Deep Learning</span>
+                                </div>
+                                <div class="flex items-center gap-3 p-4 bg-gray-50 rounded-xl">
+                                    <div class="w-8 h-8 rounded-full bg-blue-100 flex items-center justify-center"><i
+                                            data-lucide="database" class="w-4 h-4 text-blue-600"></i></div>
+                                    <span class="font-semibold text-sm">Big Data Analytics</span>
+                                </div>
+                                <div class="flex items-center gap-3 p-4 bg-gray-50 rounded-xl">
+                                    <div class="w-8 h-8 rounded-full bg-blue-100 flex items-center justify-center"><i
+                                            data-lucide="eye" class="w-4 h-4 text-blue-600"></i></div>
+                                    <span class="font-semibold text-sm">Computer Vision</span>
+                                </div>
+                                <div class="flex items-center gap-3 p-4 bg-gray-50 rounded-xl">
+                                    <div class="w-8 h-8 rounded-full bg-blue-100 flex items-center justify-center"><i
+                                            data-lucide="message-square" class="w-4 h-4 text-blue-600"></i></div>
+                                    <span class="font-semibold text-sm">Natural Language Processing</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="relative">
+                        <img src="../images/hero/hero-2.png"
+                            class="rounded-3xl shadow-2xl relative z-10 w-full h-full object-cover">
+                        <div class="absolute -bottom-6 -left-6 w-32 h-32 bg-blue-600 rounded-3xl -z-10"></div>
+                        <div class="absolute -top-6 -right-6 w-32 h-32 bg-amber-400 rounded-3xl -z-10"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Facilities -->
+        <section class="py-24 bg-gray-900 text-white">
+            <div class="max-w-7xl mx-auto px-4">
+                <div class="text-center mb-16">
+                    <h2 class="text-sm font-bold text-blue-400 uppercase tracking-widest mb-4">Industry Standard</h2>
+                    <h3 class="text-4xl font-extrabold">Department Facilities</h3>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="p-8 rounded-3xl bg-gray-800 border border-gray-700">
+                        <i data-lucide="cpu" class="w-10 h-10 text-blue-500 mb-6"></i>
+                        <h4 class="text-xl font-bold mb-4">High Computing Lab</h4>
+                        <p class="text-sm text-gray-400 leading-relaxed">Equipped with NVIDIA RTX GPUs for deep learning
+                            projects and high-performance computation tasks.</p>
+                    </div>
+                    <div class="p-8 rounded-3xl bg-gray-800 border border-gray-700">
+                        <i data-lucide="microscope" class="w-10 h-10 text-emerald-500 mb-6"></i>
+                        <h4 class="text-xl font-bold mb-4">Innovation Hub</h4>
+                        <p class="text-sm text-gray-400 leading-relaxed">A dedicated space for prototyping AI-driven IoT
+                            devices and robotic automation systems.</p>
+                    </div>
+                    <div class="p-8 rounded-3xl bg-gray-800 border border-gray-700">
+                        <i data-lucide="book" class="w-10 h-10 text-amber-500 mb-6"></i>
+                        <h4 class="text-xl font-bold mb-4">Digital Library</h4>
+                        <p class="text-sm text-gray-400 leading-relaxed">Access to IEEE, Springer, and ScienceDirect
+                            journals specifically focusing on AI and ML research.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Placeholder -->
+    <div id="footer-placeholder"></div>
+
+    <!-- Scripts -->
+    <script src="../assets/js/components.js"></script>
+    <script>
+        // Init Lucide
+        lucide.createIcons();
+    </script>
+</body>
+
+</html>

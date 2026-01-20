@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Computer Science and Engineering - KVSRIT</title>
+    <meta name="description"
+        content="The Department of Computer Science and Engineering at KVSRIT provides world-class education in computing and technology.">
+
+    <!-- Tailwind CSS Play CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        if (typeof tailwind !== 'undefined') {
+            tailwind.config = {
+                theme: {
+                    extend: {
+                        colors: {
+                            primary: {
+                                50: '#eff6ff',
+                                100: '#dbeafe',
+                                200: '#bfdbfe',
+                                300: '#93c5fd',
+                                400: '#60a5fa',
+                                500: '#3b82f6',
+                                600: '#2563eb',
+                                700: '#1d4ed8',
+                                800: '#1e40af',
+                                900: '#1e3a8a',
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Custom CSS (Relative Path) -->
+    <link rel="stylesheet" href="../../css/style.css">
+
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+
+<body>
+    <div id="app">
+        <!-- Header Injected Here -->
+
+        <main>
+            <div class="min-h-screen bg-gray-50">
+                <!-- Hero Section -->
+                <div class="bg-gradient-to-r from-blue-900 to-indigo-900 text-white py-20">
+                    <div class="container mx-auto px-4">
+                        <div class="max-w-4xl">
+                            <span
+                                class="inline-block px-3 py-1 bg-blue-800 rounded-full text-sm font-medium mb-4 border border-blue-700">
+                                Department of
+                            </span>
+                            <h1 class="text-4xl md:text-5xl font-bold mb-6">Computer Science and Engineering</h1>
+                            <p class="text-xl text-blue-100 leading-relaxed max-w-3xl">
+                                The Department of Computer Science and Engineering was established to provide
+                                world-class education in computing and technology. We aim to produce globally competent
+                                professionals.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container mx-auto px-4 py-12">
+                    <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+
+                        <!-- Main Content -->
+                        <div class="lg:col-span-2 space-y-12">
+
+                            <!-- Vision & Mission -->
+                            <section class="bg-white rounded-xl shadow-sm p-8 border border-gray-100">
+                                <h2 class="text-2xl font-bold text-gray-900 mb-6 flex items-center gap-2">
+                                    <i data-lucide="target" class="w-6 h-6 text-blue-600"></i> Vision & Mission
+                                </h2>
+
+                                <div class="mb-8">
+                                    <h3 class="text-lg font-semibold text-gray-800 mb-3">Vision</h3>
+                                    <div
+                                        class="bg-blue-50 p-6 rounded-lg border-l-4 border-blue-600 italic text-gray-700">
+                                        "To be a center of excellence in Computer Science and Engineering education and
+                                        research."
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <h3 class="text-lg font-semibold text-gray-800 mb-3">Mission</h3>
+                                    <ul class="space-y-3">
+                                        <li class="flex items-start gap-3">
+                                            <span
+                                                class="flex-shrink-0 w-6 h-6 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center text-sm font-bold mt-0.5">1</span>
+                                            <span class="text-gray-600">To provide quality education in Computer Science
+                                                and Engineering.</span>
+                                        </li>
+                                        <li class="flex items-start gap-3">
+                                            <span
+                                                class="flex-shrink-0 w-6 h-6 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center text-sm font-bold mt-0.5">2</span>
+                                            <span class="text-gray-600">To promote research and innovation.</span>
+                                        </li>
+                                        <li class="flex items-start gap-3">
+                                            <span
+                                                class="flex-shrink-0 w-6 h-6 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center text-sm font-bold mt-0.5">3</span>
+                                            <span class="text-gray-600">To foster industry-academia interaction.</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </section>
+
+                            <!-- Research Areas -->
+                            <section class="bg-white rounded-xl shadow-sm p-8 border border-gray-100">
+                                <h2 class="text-2xl font-bold text-gray-900 mb-6 flex items-center gap-2">
+                                    <i data-lucide="award" class="w-6 h-6 text-blue-600"></i> Research Areas
+                                </h2>
+                                <div class="grid gap-4">
+                                    <div
+                                        class="p-4 rounded-lg border border-gray-100 hover:border-blue-200 hover:bg-blue-50 transition-colors">
+                                        <h3 class="font-semibold text-gray-900 mb-2">Artificial Intelligence</h3>
+                                        <p class="text-sm text-gray-600">Research in Machine Learning, Deep Learning,
+                                            and NLP.</p>
+                                    </div>
+                                    <div
+                                        class="p-4 rounded-lg border border-gray-100 hover:border-blue-200 hover:bg-blue-50 transition-colors">
+                                        <h3 class="font-semibold text-gray-900 mb-2">IoT and Embedded Systems</h3>
+                                        <p class="text-sm text-gray-600">Developing smart solutions for real-world
+                                            problems.</p>
+                                    </div>
+                                </div>
+                            </section>
+
+                            <!-- Resources Section -->
+                            <section class="bg-white rounded-xl shadow-sm p-8 border border-gray-100">
+                                <h2 class="text-2xl font-bold text-gray-900 mb-6 flex items-center gap-2">
+                                    <i data-lucide="file-text" class="w-6 h-6 text-blue-600"></i> Academic Resources
+                                </h2>
+                                <div class="grid gap-4 sm:grid-cols-2">
+                                    <a href="#"
+                                        class="flex items-center justify-between p-4 rounded-lg border border-gray-100 hover:border-blue-200 hover:bg-blue-50 transition-all group">
+                                        <div>
+                                            <div class="font-semibold text-gray-900">CSE Syllabus 2024-25</div>
+                                            <div
+                                                class="text-xs text-blue-600 font-medium px-2 py-0.5 bg-blue-100 rounded-full inline-block mt-1">
+                                                Syllabus
+                                            </div>
+                                        </div>
+                                        <i data-lucide="download"
+                                            class="w-18 h-18 text-gray-400 group-hover:text-blue-600"></i>
+                                    </a>
+                                    <a href="#"
+                                        class="flex items-center justify-between p-4 rounded-lg border border-gray-100 hover:border-blue-200 hover:bg-blue-50 transition-all group">
+                                        <div>
+                                            <div class="font-semibold text-gray-900">Data Structures Question Bank</div>
+                                            <div
+                                                class="text-xs text-blue-600 font-medium px-2 py-0.5 bg-blue-100 rounded-full inline-block mt-1">
+                                                Previous Paper
+                                            </div>
+                                        </div>
+                                        <i data-lucide="download"
+                                            class="w-18 h-18 text-gray-400 group-hover:text-blue-600"></i>
+                                    </a>
+                                </div>
+                            </section>
+
+                            <!-- Timetables Section -->
+                            <section class="bg-white rounded-xl shadow-sm p-8 border border-gray-100">
+                                <h2 class="text-2xl font-bold text-gray-900 mb-6 flex items-center gap-2">
+                                    <i data-lucide="clock" class="w-6 h-6 text-blue-600"></i> Department Timetables
+                                </h2>
+                                <div class="overflow-x-auto">
+                                    <table class="w-full text-left">
+                                        <thead>
+                                            <tr class="border-b border-gray-100">
+                                                <th class="py-3 font-semibold text-gray-900">Year/Sem</th>
+                                                <th class="py-3 font-semibold text-gray-900">Schedule Name</th>
+                                                <th class="py-3 text-right font-semibold text-gray-900">Action</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody class="divide-y divide-gray-50">
+                                            <tr class="hover:bg-gray-50 transition-colors">
+                                                <td class="py-4 text-sm text-gray-600">2nd Year - 1st Sem</td>
+                                                <td class="py-4 font-medium text-gray-900">2nd Year Sec-A Timetable</td>
+                                                <td class="py-4 text-right">
+                                                    <a href="#"
+                                                        class="text-blue-600 hover:text-blue-800 text-sm font-semibold flex items-center justify-end gap-1">
+                                                        View <i data-lucide="chevron-right" class="w-4 h-4"></i>
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                            <tr class="hover:bg-gray-50 transition-colors">
+                                                <td class="py-4 text-sm text-gray-600">3rd Year - 1st Sem</td>
+                                                <td class="py-4 font-medium text-gray-900">3rd Year Sec-B Timetable</td>
+                                                <td class="py-4 text-right">
+                                                    <a href="#"
+                                                        class="text-blue-600 hover:text-blue-800 text-sm font-semibold flex items-center justify-end gap-1">
+                                                        View <i data-lucide="chevron-right" class="w-4 h-4"></i>
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </section>
+
+                            <!-- Curriculum Preview -->
+                            <section class="bg-white rounded-xl shadow-sm p-8 border border-gray-100">
+                                <h2 class="text-2xl font-bold text-gray-900 mb-6 flex items-center gap-2">
+                                    <i data-lucide="book" class="w-6 h-6 text-blue-600"></i> Curriculum Highlights
+                                </h2>
+                                <div class="space-y-6">
+                                    <div>
+                                        <h3 class="font-medium text-gray-900 mb-3">1st Semester</h3>
+                                        <div class="flex flex-wrap gap-2">
+                                            <span
+                                                class="px-3 py-1 bg-gray-100 text-gray-600 text-sm rounded-full">Mathematics
+                                                I</span>
+                                            <span
+                                                class="px-3 py-1 bg-gray-100 text-gray-600 text-sm rounded-full">Programming
+                                                for Problem Solving</span>
+                                            <span
+                                                class="px-3 py-1 bg-gray-100 text-gray-600 text-sm rounded-full">Engineering
+                                                Physics</span>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <h3 class="font-medium text-gray-900 mb-3">2nd Semester</h3>
+                                        <div class="flex flex-wrap gap-2">
+                                            <span
+                                                class="px-3 py-1 bg-gray-100 text-gray-600 text-sm rounded-full">Mathematics
+                                                II</span>
+                                            <span class="px-3 py-1 bg-gray-100 text-gray-600 text-sm rounded-full">Data
+                                                Structures</span>
+                                            <span
+                                                class="px-3 py-1 bg-gray-100 text-gray-600 text-sm rounded-full">Engineering
+                                                Chemistry</span>
+                                        </div>
+                                    </div>
+                                    <button class="text-blue-600 font-medium text-sm hover:underline flex items-center">
+                                        View Full Curriculum <i data-lucide="chevron-right" class="w-4 h-4"></i>
+                                    </button>
+                                </div>
+                            </section>
+
+                        </div>
+
+                        <!-- Sidebar -->
+                        <div class="lg:col-span-1 space-y-8">
+
+                            <!-- HOD Profile -->
+                            <div class="bg-white rounded-xl shadow-sm p-6 border border-gray-100">
+                                <h3 class="text-lg font-bold text-gray-900 mb-4 border-b pb-2">Head of Department</h3>
+                                <div class="flex items-center gap-4 mb-4">
+                                    <div
+                                        class="w-16 h-16 bg-gray-200 rounded-full flex items-center justify-center text-gray-400">
+                                        <i data-lucide="user" class="w-8 h-8"></i>
+                                    </div>
+                                    <div>
+                                        <div class="font-bold text-gray-900">Dr. C Mohammed Gulzar</div>
+                                        <div class="text-sm text-gray-500">HOD, CSE</div>
+                                    </div>
+                                </div>
+                                <p class="text-sm text-gray-600 italic mb-4">
+                                    "Welcome to the CSE Department. Our mission is to empower students with computing
+                                    knowledge and analytical skills to solve complex problems in the digital age."
+                                </p>
+                            </div>
+
+                            <!-- Faculty List (Preview) -->
+                            <div class="bg-white rounded-xl shadow-sm p-6 border border-gray-100">
+                                <h3 class="text-lg font-bold text-gray-900 mb-4 border-b pb-2">Faculty Members</h3>
+                                <div class="space-y-4">
+                                    <!-- Faculty 1 -->
+                                    <div class="flex items-start gap-3">
+                                        <div
+                                            class="w-10 h-10 bg-gray-100 rounded-full flex items-center justify-center text-gray-400 flex-shrink-0">
+                                            <i data-lucide="user" class="w-4 h-4"></i>
+                                        </div>
+                                        <div>
+                                            <div class="font-medium text-gray-900 text-sm">Dr. Dhanaraj Cheelu</div>
+                                            <div class="text-xs text-gray-500">Professor</div>
+                                            <a href="#"
+                                                class="text-xs text-blue-600 hover:underline flex items-center mt-1">
+                                                <i data-lucide="mail" class="w-3 h-3 mr-1"></i> Email
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <!-- Faculty 2 -->
+                                    <div class="flex items-start gap-3">
+                                        <div
+                                            class="w-10 h-10 bg-gray-100 rounded-full flex items-center justify-center text-gray-400 flex-shrink-0">
+                                            <i data-lucide="user" class="w-4 h-4"></i>
+                                        </div>
+                                        <div>
+                                            <div class="font-medium text-gray-900 text-sm">Dr. K. Pavan Kumar</div>
+                                            <div class="text-xs text-gray-500">Professor</div>
+                                            <a href="#"
+                                                class="text-xs text-blue-600 hover:underline flex items-center mt-1">
+                                                <i data-lucide="mail" class="w-3 h-3 mr-1"></i> Email
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <!-- Faculty 3 -->
+                                    <div class="flex items-start gap-3">
+                                        <div
+                                            class="w-10 h-10 bg-gray-100 rounded-full flex items-center justify-center text-gray-400 flex-shrink-0">
+                                            <i data-lucide="user" class="w-4 h-4"></i>
+                                        </div>
+                                        <div>
+                                            <div class="font-medium text-gray-900 text-sm">Dr. P. Surya Narayana Babu
+                                            </div>
+                                            <div class="text-xs text-gray-500">Professor</div>
+                                            <a href="#"
+                                                class="text-xs text-blue-600 hover:underline flex items-center mt-1">
+                                                <i data-lucide="mail" class="w-3 h-3 mr-1"></i> Email
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <!-- Faculty 4 -->
+                                    <div class="flex items-start gap-3">
+                                        <div
+                                            class="w-10 h-10 bg-gray-100 rounded-full flex items-center justify-center text-gray-400 flex-shrink-0">
+                                            <i data-lucide="user" class="w-4 h-4"></i>
+                                        </div>
+                                        <div>
+                                            <div class="font-medium text-gray-900 text-sm">Dr. M. Veeresha</div>
+                                            <div class="text-xs text-gray-500">Associate Professor</div>
+                                            <a href="#"
+                                                class="text-xs text-blue-600 hover:underline flex items-center mt-1">
+                                                <i data-lucide="mail" class="w-3 h-3 mr-1"></i> Email
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Quick Links -->
+                            <div class="bg-blue-50 rounded-xl p-6 border border-blue-100">
+                                <h3 class="text-lg font-bold text-blue-900 mb-4">Quick Links</h3>
+                                <ul class="space-y-2">
+                                    <li>
+                                        <a href="#"
+                                            class="text-blue-700 hover:text-blue-900 text-sm block py-1">Department
+                                            Calendar</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="text-blue-700 hover:text-blue-900 text-sm block py-1">Student
+                                            Achievements</a>
+                                    </li>
+                                    <li>
+                                        <a href="#"
+                                            class="text-blue-700 hover:text-blue-900 text-sm block py-1">Laboratories</a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- Footer Injected Here -->
+    </div>
+
+    <!-- Core Scripts -->
+    <script src="../../js/data.js"></script>
+    <script src="../../js/components.js"></script>
+    <script src="../../js/main.js"></script>
+    <script>
+        // Manually trigger header and footer with rootPath
+        document.addEventListener('DOMContentLoaded', () => {
+            const headerPlaceholder = document.getElementById('app').firstElementChild; // Assuming header is first
+            // Actually components.js replaces innerHTML of undefined? No, main.js usually calls it.
+            // We need to override the default main.js behavior or wait for it?
+            // main.js usually does:
+            // document.addEventListener('DOMContentLoaded', () => {
+            //   const app = document.getElementById('app');
+            //   app.insertAdjacentHTML('afterbegin', window.components.header());
+            //   app.insertAdjacentHTML('beforeend', window.components.footer());
+            //   lucide.createIcons();
+            // });
+
+            // Since main.js is loaded, it will run. But it calls header() without args.
+            // I need to intercept or modify main.js behavior for subpages.
+            // OR, I can define a global config before loading main.js?
+            // No, main.js logic is simple.
+            // I should probably UPDATE main.js to allow arguments.
+
+            // BUT, since I can't easily change main.js conditionally for just one page without changing it for all...
+            // I will instruct main.js to look for a global variable `window.rootPath`.
+        });
+
+        // Define rootPath for main.js to pick up if we modify main.js
+        window.rootPath = '../../';
+    </script>
+
+    <!-- I need to modify main.js to support window.rootPath -->
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+
+</html>

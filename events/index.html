@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upcoming Events - KVSRIT</title>
+    <meta name="description"
+        content="Stay updated with the latest happenings, workshops, and cultural fests at KVSRIT.">
+
+    <!-- Tailwind CSS Play CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      if (typeof tailwind !== 'undefined') {
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: {
+                            50: '#eff6ff',
+                            100: '#dbeafe',
+                            200: '#bfdbfe',
+                            300: '#93c5fd',
+                            400: '#60a5fa',
+                            500: '#3b82f6',
+                            600: '#2563eb',
+                            700: '#1d4ed8',
+                            800: '#1e40af',
+                            900: '#1e3a8a',
+                        }
+                    }
+                }
+            }
+        }
+      }
+    </script>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../css/style.css">
+
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+
+<body>
+    <div id="app">
+        <!-- Header Injected Here -->
+
+        <main>
+            <div class="min-h-screen bg-gray-50 py-12">
+                <div class="container mx-auto px-4">
+                    <div class="text-center mb-16">
+                        <h1 class="text-4xl font-bold text-gray-900 mb-4">Upcoming Events</h1>
+                        <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+                            Stay updated with the latest happenings, workshops, and cultural fests at KVSRIT.
+                        </p>
+                    </div>
+
+                    <div id="events-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                        <!-- Events populated via JS -->
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- Footer Injected Here -->
+    </div>
+
+    <!-- Core Scripts -->
+    <script src="../js/data.js"></script>
+    <script src="../js/components.js"></script>
+    <script>window.rootPath = '../';</script>
+    <script src="../js/main.js"></script>
+
+    <!-- Page Specific Script -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const eventsGrid = document.getElementById('events-grid');
+            const events = window.APP_DATA.events || [];
+
+            if (events.length === 0) {
+                eventsGrid.innerHTML = `
+                    <div class="col-span-full text-center py-12">
+                        <p class="text-gray-500 text-lg">No upcoming events at the moment.</p>
+                    </div>
+                `;
+                return;
+            }
+
+            eventsGrid.innerHTML = events.map(event => `
+                <a href="events-details.html?id=${event.id}" class="group bg-white rounded-xl shadow-sm hover:shadow-xl transition-all duration-300 overflow-hidden flex flex-col h-full border border-gray-100">
+                    <div class="h-48 bg-gray-200 relative">
+                        ${event.thumbnail ?
+                    `<img src="${event.thumbnail}" alt="${event.title}" class="w-full h-full object-cover">` :
+                    `<div class="absolute inset-0 flex items-center justify-center text-gray-400 font-medium bg-gray-100">No Image Available</div>`
+                }
+                        <div class="absolute top-4 left-4 bg-blue-600 text-white text-xs font-bold px-2 py-1 rounded shadow-sm">
+                            ${event.category}
+                        </div>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col">
+                        <div class="flex items-center text-sm text-gray-500 mb-3 gap-4">
+                            <div class="flex items-center gap-1">
+                                <i data-lucide="calendar" class="w-3.5 h-3.5"></i>
+                                ${event.date}
+                            </div>
+                            <div class="flex items-center gap-1">
+                                <i data-lucide="clock" class="w-3.5 h-3.5"></i>
+                                ${event.time}
+                            </div>
+                        </div>
+                        
+                        <h3 class="text-xl font-bold text-gray-900 mb-3 group-hover:text-blue-600 transition-colors line-clamp-2">
+                            ${event.title}
+                        </h3>
+                        
+                        <div class="flex items-center text-gray-500 text-sm mb-4">
+                           <i data-lucide="map-pin" class="w-3.5 h-3.5 mr-1"></i>
+                           ${event.venue}
+                        </div>
+
+                        <p class="text-gray-600 text-sm line-clamp-3 mb-6 flex-1">
+                            ${event.description}
+                        </p>
+                        
+                        <div class="text-blue-600 font-medium flex items-center mt-auto">
+                            View Details <i data-lucide="arrow-right" class="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform"></i>
+                        </div>
+                    </div>
+                </a>
+            `).join('');
+
+            // Re-initialize icons for dynamic content
+            if (window.lucide) {
+                window.lucide.createIcons();
+            }
+        });
+    </script>
+</body>
+
+</html>
+

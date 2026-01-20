@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Academics - KVSRIT</title>
+    <meta name="description"
+        content="Explore our wide range of undergraduate, postgraduate, and diploma programs designed to shape the future.">
+
+    <!-- Tailwind CSS Play CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      if (typeof tailwind !== 'undefined') {
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: {
+                            50: '#eff6ff',
+                            100: '#dbeafe',
+                            200: '#bfdbfe',
+                            300: '#93c5fd',
+                            400: '#60a5fa',
+                            500: '#3b82f6',
+                            600: '#2563eb',
+                            700: '#1d4ed8',
+                            800: '#1e40af',
+                            900: '#1e3a8a',
+                        }
+                    }
+                }
+            }
+        }
+      }
+    </script>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../css/style.css">
+
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+
+<body>
+    <div id="app">
+        <!-- Header Injected Here -->
+
+        <main>
+            <div class="bg-gray-50 min-h-screen">
+                <!-- Header -->
+                <div class="bg-blue-900 text-white py-16">
+                    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                        <h1 class="text-4xl font-bold mb-4">Academics</h1>
+                        <p class="text-blue-100 text-lg max-w-2xl">
+                            Explore our wide range of undergraduate, postgraduate, and diploma programs designed to
+                            shape the future.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Main Content -->
+                <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+
+                    <!-- Tabs -->
+                    <div id="program-tabs" class="flex flex-wrap gap-2 mb-8 border-b border-gray-200">
+                        <!-- Populated via JS -->
+                    </div>
+
+                    <!-- Tab Content -->
+                    <div class="bg-white rounded-lg shadow-sm p-6 sm:p-8">
+                        <div class="mb-8" id="program-header">
+                            <!-- Populated via JS -->
+                        </div>
+
+                        <div id="program-courses" class="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+                            <!-- Populated via JS -->
+                        </div>
+                    </div>
+
+                    <!-- Academic Calendar Download or Link -->
+                    <div class="mt-12 bg-blue-50 rounded-lg p-8 flex flex-col md:flex-row items-center justify-between">
+                        <div>
+                            <h3 className="text-xl font-bold text-blue-900 mb-2">Academic Calendar</h3>
+                            <p class="text-blue-700">Check the schedule for examinations, holidays, and events.</p>
+                        </div>
+                        <button
+                            class="mt-4 md:mt-0 px-6 py-3 bg-blue-600 text-white font-medium rounded-md hover:bg-blue-700 transition-colors">
+                            Download Calendar
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+        </main>
+
+        <!-- Footer Injected Here -->
+    </div>
+
+    <!-- Core Scripts -->
+    <script src="../js/data.js"></script>
+    <script src="../js/components.js"></script>
+    <script>window.rootPath = '../';</script>
+    <script src="../js/main.js"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const programs = window.APP_DATA.academicPrograms || {};
+            const tabsContainer = document.getElementById('program-tabs');
+            const headerContainer = document.getElementById('program-header');
+            const coursesContainer = document.getElementById('program-courses');
+
+            let activeTab = 'btech'; // Default tab
+
+            function renderTabs() {
+                tabsContainer.innerHTML = Object.keys(programs).map(key => `
+                    <button
+                        onclick="switchTab('${key}')"
+                        class="px-6 py-3 font-medium text-sm sm:text-base rounded-t-lg transition-colors focus:outline-none ${activeTab === key
+                        ? 'bg-white text-blue-600 border-t border-l border-r border-gray-200 shadow-sm'
+                        : 'text-gray-500 hover:text-gray-700 hover:bg-gray-100'
+                    }"
+                    >
+                        ${programs[key].title.split('(')[0].trim()}
+                    </button>
+                `).join('');
+            }
+
+            function renderContent() {
+                const program = programs[activeTab];
+                if (!program) return;
+
+                headerContainer.innerHTML = `
+                    <h2 class="text-2xl font-bold text-gray-900 mb-2">${program.title}</h2>
+                    <p class="text-gray-600">${program.description}</p>
+                `;
+
+                coursesContainer.innerHTML = program.courses.map((course, index) => `
+                    <div class="border border-gray-200 rounded-lg p-5 hover:border-blue-500 hover:shadow-md transition-all group cursor-pointer">
+                        <div class="flex justify-between items-start mb-4">
+                            <div class="bg-blue-100 p-2 rounded-lg text-blue-600 group-hover:bg-blue-600 group-hover:text-white transition-colors">
+                                ${activeTab === 'management' ? '<i data-lucide="book-open" class="w-6 h-6"></i>' : '<i data-lucide="graduation-cap" class="w-6 h-6"></i>'}
+                            </div>
+                            <span class="text-xs font-bold text-gray-400 border border-gray-200 px-2 py-1 rounded">
+                                ${course.code}
+                            </span>
+                        </div>
+                        <h3 class="text-lg font-semibold text-gray-900 mb-2 group-hover:text-blue-600 transition-colors">
+                            ${course.name}
+                        </h3>
+                        <div class="mt-4 flex items-center text-sm text-blue-500 font-medium opacity-0 group-hover:opacity-100 transition-opacity">
+                            View Details <i data-lucide="chevron-right" class="w-4 h-4 ml-1"></i>
+                        </div>
+                    </div>
+                `).join('');
+
+                if (window.lucide) {
+                    window.lucide.createIcons();
+                }
+            }
+
+            // Expose switchTab to global scope for onclick handlers
+            window.switchTab = (key) => {
+                activeTab = key;
+                renderTabs();
+                renderContent();
+            };
+
+            // Initial render
+            renderTabs();
+            renderContent();
+        });
+    </script>
+</body>
+
+</html>
+

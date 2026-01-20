@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Administration - KVSRIT</title>
+    <meta name="description" content="Administrative login and resources for KVSRIT staff and faculty.">
+
+    <!-- Tailwind CSS Play CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        if (typeof tailwind !== 'undefined') {
+            tailwind.config = {
+                theme: {
+                    extend: {
+                        colors: {
+                            primary: {
+                                50: '#eff6ff',
+                                100: '#dbeafe',
+                                200: '#bfdbfe',
+                                300: '#93c5fd',
+                                400: '#60a5fa',
+                                500: '#3b82f6',
+                                600: '#2563eb',
+                                700: '#1d4ed8',
+                                800: '#1e40af',
+                                900: '#1e3a8a',
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../css/style.css">
+
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+
+<body>
+    <div id="app">
+        <!-- Header Injected Here -->
+
+        <main>
+            <div class="min-h-screen bg-gray-50 flex items-center justify-center p-4">
+                <div
+                    class="bg-white rounded-2xl shadow-xl w-full max-w-4xl overflow-hidden flex flex-col md:flex-row min-h-[500px]">
+
+                    <!-- Left Side: Login -->
+                    <div class="w-full md:w-1/2 p-8 md:p-12 flex flex-col justify-center">
+                        <div class="mb-8">
+                            <h2 class="text-3xl font-bold text-gray-900 mb-2">Admin Login</h2>
+                            <p class="text-gray-500">Welcome back. Please login to your account.</p>
+                        </div>
+
+                        <form
+                            onsubmit="event.preventDefault(); alert('This is a static demo. Admin login functionality requires a backend.');">
+                            <div class="space-y-4">
+                                <div>
+                                    <label class="block text-sm font-medium text-gray-700 mb-1">Username / Staff
+                                        ID</label>
+                                    <div class="relative">
+                                        <div
+                                            class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+                                            <i data-lucide="user" class="h-5 w-5 text-gray-400"></i>
+                                        </div>
+                                        <input type="text"
+                                            class="block w-full pl-10 pr-3 py-2 border border-gray-300 rounded-lg focus:ring-blue-500 focus:border-blue-500 transition-colors"
+                                            placeholder="Enter ID">
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <label class="block text-sm font-medium text-gray-700 mb-1">Password</label>
+                                    <div class="relative">
+                                        <div
+                                            class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+                                            <i data-lucide="lock" class="h-5 w-5 text-gray-400"></i>
+                                        </div>
+                                        <input type="password"
+                                            class="block w-full pl-10 pr-3 py-2 border border-gray-300 rounded-lg focus:ring-blue-500 focus:border-blue-500 transition-colors"
+                                            placeholder="Enter Password">
+                                    </div>
+                                </div>
+
+                                <div class="flex items-center justify-between">
+                                    <div class="flex items-center">
+                                        <input id="remember-me" name="remember-me" type="checkbox"
+                                            class="h-4 w-4 text-blue-600 focus:ring-blue-500 border-gray-300 rounded">
+                                        <label for="remember-me" class="ml-2 block text-sm text-gray-900">Remember
+                                            me</label>
+                                    </div>
+
+                                    <div class="text-sm">
+                                        <a href="#" class="font-medium text-blue-600 hover:text-blue-500">Forgot
+                                            password?</a>
+                                    </div>
+                                </div>
+
+                                <button type="submit"
+                                    class="w-full flex justify-center py-2 px-4 border border-transparent rounded-lg shadow-sm text-sm font-medium text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 transition-colors">
+                                    Sign in
+                                </button>
+                            </div>
+                        </form>
+
+                        <div class="mt-6 text-center text-xs text-gray-500">
+                            <p>Protected by reCAPTCHA and subject to the Google Privacy Policy and Terms of Service.</p>
+                        </div>
+                    </div>
+
+                    <!-- Right Side: Info/Decoration -->
+                    <div class="hidden md:block w-1/2 bg-blue-600 relative overflow-hidden">
+                        <div class="absolute inset-0 bg-gradient-to-br from-blue-600 to-indigo-800"></div>
+                        <div class="relative h-full flex flex-col justify-center p-12 text-white">
+                            <h3 class="text-2xl font-bold mb-4">Staff Resources</h3>
+                            <ul class="space-y-4 mb-8">
+                                <li class="flex items-center gap-3">
+                                    <div class="w-8 h-8 bg-white/20 rounded-lg flex items-center justify-center">
+                                        <i data-lucide="users" class="w-4 h-4"></i>
+                                    </div>
+                                    <span>Faculty Management</span>
+                                </li>
+                                <li class="flex items-center gap-3">
+                                    <div class="w-8 h-8 bg-white/20 rounded-lg flex items-center justify-center">
+                                        <i data-lucide="file-text" class="w-4 h-4"></i>
+                                    </div>
+                                    <span>Exam Cell Portal</span>
+                                </li>
+                                <li class="flex items-center gap-3">
+                                    <div class="w-8 h-8 bg-white/20 rounded-lg flex items-center justify-center">
+                                        <i data-lucide="bar-chart" class="w-4 h-4"></i>
+                                    </div>
+                                    <span>Attendance Reports</span>
+                                </li>
+                            </ul>
+                            <a href="index.html"
+                                class="inline-flex items-center text-blue-100 hover:text-white transition-colors">
+                                <i data-lucide="arrow-left" class="w-4 h-4 mr-2"></i> Back to Annual Website
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </main>
+
+        <!-- No Footer needed for logic login page typically, but sticking to consistency -->
+    </div>
+
+    <!-- Core Scripts -->
+    <script src="../js/data.js"></script>
+    <script src="../js/components.js"></script>
+    <script>window.rootPath = '../';</script>
+    <script src="../js/main.js"></script>
+</body>
+
+</html>

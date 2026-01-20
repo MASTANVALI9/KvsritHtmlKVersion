@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campus Life | KVSRIT</title>
+    <meta name="description"
+        content="Discover vibrant campus life at KVSRIT - student clubs, cultural events, sports, and recreation activities.">
+
+    <!-- Tailwind CSS Play CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        if (typeof tailwind !== 'undefined') {
+            tailwind.config = {
+                theme: {
+                    extend: {
+                        colors: {
+                            primary: {
+                                50: '#eff6ff',
+                                100: '#dbeafe',
+                                200: '#bfdbfe',
+                                300: '#93c5fd',
+                                400: '#60a5fa',
+                                500: '#3b82f6',
+                                600: '#2563eb',
+                                700: '#1d4ed8',
+                                800: '#1e40af',
+                                900: '#1e3a8a',
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../css/style.css">
+
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+
+<body>
+    <div id="app">
+        <!-- Header Injected Here -->
+
+        <main>
+            <div class="min-h-screen">
+                <!-- Hero Section -->
+                <div
+                    class="relative bg-gradient-to-br from-purple-900 via-indigo-900 to-blue-900 text-white py-24 overflow-hidden">
+                    <div class="absolute inset-0 opacity-30">
+                        <div class="absolute top-0 left-1/4 w-96 h-96 bg-purple-500 rounded-full filter blur-[128px]">
+                        </div>
+                        <div class="absolute bottom-0 right-1/4 w-96 h-96 bg-blue-500 rounded-full filter blur-[128px]">
+                        </div>
+                    </div>
+
+                    <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                        <span
+                            class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 backdrop-blur text-sm font-medium mb-6">
+                            <i data-lucide="sparkles" class="w-4 h-4 text-yellow-400"></i>
+                            Beyond Academics
+                        </span>
+                        <h1 class="text-5xl md:text-6xl font-bold mb-6">
+                            Vibrant <span
+                                class="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-blue-400">Campus
+                                Life</span>
+                        </h1>
+                        <p class="text-xl text-blue-100 max-w-3xl mx-auto">
+                            Experience a holistic journey of growth, creativity, and lifelong friendships at KVSRIT.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Student Clubs -->
+                <section class="py-20 bg-gradient-to-br from-gray-50 via-white to-blue-50">
+                    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                        <div class="text-center mb-16">
+                            <span
+                                class="inline-block px-4 py-2 rounded-full bg-purple-100 text-purple-700 text-sm font-semibold mb-4">
+                                Get Involved
+                            </span>
+                            <h2 class="text-4xl font-bold text-gray-900 mb-4">
+                                Student <span
+                                    class="text-transparent bg-clip-text bg-gradient-to-r from-purple-600 to-indigo-600">Clubs
+                                    & Organizations</span>
+                            </h2>
+                            <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+                                Join vibrant communities that match your interests and passions.
+                            </p>
+                        </div>
+
+                        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                            <!-- Tech Club -->
+                            <div
+                                class="group bg-white rounded-2xl p-8 shadow-lg shadow-gray-100/50 border border-gray-100 hover:shadow-xl hover:shadow-purple-100/50 transition-all duration-300 hover:-translate-y-2">
+                                <div
+                                    class="w-16 h-16 rounded-2xl bg-gradient-to-br from-blue-500 to-cyan-400 flex items-center justify-center mb-6 shadow-lg group-hover:scale-110 transition-transform duration-300">
+                                    <i data-lucide="code" class="h-8 w-8 text-white"></i>
+                                </div>
+                                <h3 class="text-xl font-bold text-gray-900 mb-3">Tech Club</h3>
+                                <p class="text-gray-600 mb-4">Explore cutting-edge technologies, hackathons, and coding
+                                    competitions.</p>
+                                <div class="flex items-center justify-between">
+                                    <span class="text-sm text-gray-500 flex items-center gap-1">
+                                        <i data-lucide="users" class="w-3 h-3"></i> 120+ members
+                                    </span>
+                                    <button
+                                        class="text-blue-600 font-medium text-sm hover:text-blue-700 flex items-center gap-1">
+                                        Join <i data-lucide="arrow-right" class="w-3 h-3"></i>
+                                    </button>
+                                </div>
+                            </div>
+
+                            <!-- Cultural Club -->
+                            <div
+                                class="group bg-white rounded-2xl p-8 shadow-lg shadow-gray-100/50 border border-gray-100 hover:shadow-xl hover:shadow-purple-100/50 transition-all duration-300 hover:-translate-y-2">
+                                <div
+                                    class="w-16 h-16 rounded-2xl bg-gradient-to-br from-purple-500 to-pink-400 flex items-center justify-center mb-6 shadow-lg group-hover:scale-110 transition-transform duration-300">
+                                    <i data-lucide="music" class="h-8 w-8 text-white"></i>
+                                </div>
+                                <h3 class="text-xl font-bold text-gray-900 mb-3">Cultural Club</h3>
+                                <p class="text-gray-600 mb-4">Celebrate art, dance, music, and theatrical performances.
+                                </p>
+                                <div class="flex items-center justify-between">
+                                    <span class="text-sm text-gray-500 flex items-center gap-1">
+                                        <i data-lucide="users" class="w-3 h-3"></i> 200+ members
+                                    </span>
+                                    <button
+                                        class="text-blue-600 font-medium text-sm hover:text-blue-700 flex items-center gap-1">
+                                        Join <i data-lucide="arrow-right" class="w-3 h-3"></i>
+                                    </button>
+                                </div>
+                            </div>
+
+                            <!-- Sports Club -->
+                            <div
+                                class="group bg-white rounded-2xl p-8 shadow-lg shadow-gray-100/50 border border-gray-100 hover:shadow-xl hover:shadow-purple-100/50 transition-all duration-300 hover:-translate-y-2">
+                                <div
+                                    class="w-16 h-16 rounded-2xl bg-gradient-to-br from-emerald-500 to-teal-400 flex items-center justify-center mb-6 shadow-lg group-hover:scale-110 transition-transform duration-300">
+                                    <i data-lucide="trophy" class="h-8 w-8 text-white"></i>
+                                </div>
+                                <h3 class="text-xl font-bold text-gray-900 mb-3">Sports Club</h3>
+                                <p class="text-gray-600 mb-4">Cricket, football, basketball, athletics and more.</p>
+                                <div class="flex items-center justify-between">
+                                    <span class="text-sm text-gray-500 flex items-center gap-1">
+                                        <i data-lucide="users" class="w-3 h-3"></i> 180+ members
+                                    </span>
+                                    <button
+                                        class="text-blue-600 font-medium text-sm hover:text-blue-700 flex items-center gap-1">
+                                        Join <i data-lucide="arrow-right" class="w-3 h-3"></i>
+                                    </button>
+                                </div>
+                            </div>
+
+                            <!-- Art & Design -->
+                            <div
+                                class="group bg-white rounded-2xl p-8 shadow-lg shadow-gray-100/50 border border-gray-100 hover:shadow-xl hover:shadow-purple-100/50 transition-all duration-300 hover:-translate-y-2">
+                                <div
+                                    class="w-16 h-16 rounded-2xl bg-gradient-to-br from-amber-500 to-orange-400 flex items-center justify-center mb-6 shadow-lg group-hover:scale-110 transition-transform duration-300">
+                                    <i data-lucide="palette" class="h-8 w-8 text-white"></i>
+                                </div>
+                                <h3 class="text-xl font-bold text-gray-900 mb-3">Art & Design</h3>
+                                <p class="text-gray-600 mb-4">Photography, painting, graphic design and creative arts.
+                                </p>
+                                <div class="flex items-center justify-between">
+                                    <span class="text-sm text-gray-500 flex items-center gap-1">
+                                        <i data-lucide="users" class="w-3 h-3"></i> 80+ members
+                                    </span>
+                                    <button
+                                        class="text-blue-600 font-medium text-sm hover:text-blue-700 flex items-center gap-1">
+                                        Join <i data-lucide="arrow-right" class="w-3 h-3"></i>
+                                    </button>
+                                </div>
+                            </div>
+
+                            <!-- Photography Club -->
+                            <div
+                                class="group bg-white rounded-2xl p-8 shadow-lg shadow-gray-100/50 border border-gray-100 hover:shadow-xl hover:shadow-purple-100/50 transition-all duration-300 hover:-translate-y-2">
+                                <div
+                                    class="w-16 h-16 rounded-2xl bg-gradient-to-br from-rose-500 to-red-400 flex items-center justify-center mb-6 shadow-lg group-hover:scale-110 transition-transform duration-300">
+                                    <i data-lucide="camera" class="h-8 w-8 text-white"></i>
+                                </div>
+                                <h3 class="text-xl font-bold text-gray-900 mb-3">Photography Club</h3>
+                                <p class="text-gray-600 mb-4">Capture moments, learn techniques, and showcase your work.
+                                </p>
+                                <div class="flex items-center justify-between">
+                                    <span class="text-sm text-gray-500 flex items-center gap-1">
+                                        <i data-lucide="users" class="w-3 h-3"></i> 60+ members
+                                    </span>
+                                    <button
+                                        class="text-blue-600 font-medium text-sm hover:text-blue-700 flex items-center gap-1">
+                                        Join <i data-lucide="arrow-right" class="w-3 h-3"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Professional Chapters -->
+                <section class="py-20 bg-white">
+                    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                        <div class="flex flex-col lg:flex-row items-center gap-12">
+                            <div class="lg:w-1/3">
+                                <span
+                                    class="inline-block px-4 py-2 rounded-full bg-blue-100 text-blue-700 text-sm font-semibold mb-4">
+                                    Professional Growth
+                                </span>
+                                <h2 class="text-4xl font-bold text-gray-900 mb-6 font-display">
+                                    Professional <span
+                                        class="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600">Chapters</span>
+                                </h2>
+                                <p class="text-lg text-gray-600 mb-8 leading-relaxed">
+                                    Join world-renowned technical societies and build a global professional network
+                                    while still on campus.
+                                </p>
+                                <div
+                                    class="bg-gradient-to-br from-blue-600 to-indigo-700 p-8 rounded-3xl text-white shadow-xl shadow-blue-500/20">
+                                    <h4 class="text-xl font-bold mb-4">Why Join?</h4>
+                                    <ul class="space-y-3">
+                                        <li class="flex items-center gap-3 text-blue-100">
+                                            <div class="w-1.5 h-1.5 bg-blue-300 rounded-full"></div> Global
+                                            Certification
+                                        </li>
+                                        <li class="flex items-center gap-3 text-blue-100">
+                                            <div class="w-1.5 h-1.5 bg-blue-300 rounded-full"></div> Access to Digital
+                                            Libraries
+                                        </li>
+                                        <li class="flex items-center gap-3 text-blue-100">
+                                            <div class="w-1.5 h-1.5 bg-blue-300 rounded-full"></div> Leadership
+                                            Opportunities
+                                        </li>
+                                        <li class="flex items-center gap-3 text-blue-100">
+                                            <div class="w-1.5 h-1.5 bg-blue-300 rounded-full"></div> Industrial Exposure
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="lg:w-2/3 grid sm:grid-cols-2 gap-4">
+                                <!-- IEEE -->
+                                <div
+                                    class="bg-gray-50 border border-gray-100 p-6 rounded-3xl hover:bg-white hover:shadow-xl transition-all group">
+                                    <div class="flex items-center justify-between mb-4">
+                                        <div
+                                            class="w-12 h-12 bg-white rounded-xl flex items-center justify-center shadow-sm group-hover:bg-blue-600 transition-colors">
+                                            <i data-lucide="globe"
+                                                class="w-6 h-6 text-blue-600 group-hover:text-white"></i>
+                                        </div>
+                                        <span
+                                            class="text-[10px] font-black uppercase tracking-tighter text-blue-500">Official
+                                            Student Branch</span>
+                                    </div>
+                                    <h3 class="text-xl font-bold text-gray-900 mb-3">IEEE Student Branch</h3>
+                                    <p class="text-sm text-gray-500 mb-4 line-clamp-2">The world's largest technical
+                                        professional organization for the advancement of technology.</p>
+                                    <div class="flex flex-wrap gap-2">
+                                        <span
+                                            class="px-2 py-1 bg-white border border-gray-100 rounded-lg text-[10px] font-bold text-gray-400">Technical
+                                            Workshops</span>
+                                        <span
+                                            class="px-2 py-1 bg-white border border-gray-100 rounded-lg text-[10px] font-bold text-gray-400">Paper
+                                            Presentations</span>
+                                    </div>
+                                </div>
+                                <!-- ISTE -->
+                                <div
+                                    class="bg-gray-50 border border-gray-100 p-6 rounded-3xl hover:bg-white hover:shadow-xl transition-all group">
+                                    <div class="flex items-center justify-between mb-4">
+                                        <div
+                                            class="w-12 h-12 bg-white rounded-xl flex items-center justify-center shadow-sm group-hover:bg-blue-600 transition-colors">
+                                            <i data-lucide="globe"
+                                                class="w-6 h-6 text-blue-600 group-hover:text-white"></i>
+                                        </div>
+                                        <span
+                                            class="text-[10px] font-black uppercase tracking-tighter text-blue-500">Official
+                                            Student Branch</span>
+                                    </div>
+                                    <h3 class="text-xl font-bold text-gray-900 mb-3">ISTE Chapter</h3>
+                                    <p class="text-sm text-gray-500 mb-4 line-clamp-2">Indian Society for Technical
+                                        Education - focusing on teacher and student development.</p>
+                                    <div class="flex flex-wrap gap-2">
+                                        <span
+                                            class="px-2 py-1 bg-white border border-gray-100 rounded-lg text-[10px] font-bold text-gray-400">Faculty
+                                            Development</span>
+                                        <span
+                                            class="px-2 py-1 bg-white border border-gray-100 rounded-lg text-[10px] font-bold text-gray-400">Seminars</span>
+                                    </div>
+                                </div>
+                                <!-- IETE -->
+                                <div
+                                    class="bg-gray-50 border border-gray-100 p-6 rounded-3xl hover:bg-white hover:shadow-xl transition-all group">
+                                    <div class="flex items-center justify-between mb-4">
+                                        <div
+                                            class="w-12 h-12 bg-white rounded-xl flex items-center justify-center shadow-sm group-hover:bg-blue-600 transition-colors">
+                                            <i data-lucide="globe"
+                                                class="w-6 h-6 text-blue-600 group-hover:text-white"></i>
+                                        </div>
+                                        <span
+                                            class="text-[10px] font-black uppercase tracking-tighter text-blue-500">Official
+                                            Student Branch</span>
+                                    </div>
+                                    <h3 class="text-xl font-bold text-gray-900 mb-3">IETE Student Forum</h3>
+                                    <p class="text-sm text-gray-500 mb-4 line-clamp-2">The Institution of Electronics
+                                        and Telecommunication Engineers student chapter.</p>
+                                    <div class="flex flex-wrap gap-2">
+                                        <span
+                                            class="px-2 py-1 bg-white border border-gray-100 rounded-lg text-[10px] font-bold text-gray-400">Electronics
+                                            Design</span>
+                                        <span
+                                            class="px-2 py-1 bg-white border border-gray-100 rounded-lg text-[10px] font-bold text-gray-400">Industrial
+                                            Visits</span>
+                                    </div>
+                                </div>
+                                <!-- CSI -->
+                                <div
+                                    class="bg-gray-50 border border-gray-100 p-6 rounded-3xl hover:bg-white hover:shadow-xl transition-all group">
+                                    <div class="flex items-center justify-between mb-4">
+                                        <div
+                                            class="w-12 h-12 bg-white rounded-xl flex items-center justify-center shadow-sm group-hover:bg-blue-600 transition-colors">
+                                            <i data-lucide="globe"
+                                                class="w-6 h-6 text-blue-600 group-hover:text-white"></i>
+                                        </div>
+                                        <span
+                                            class="text-[10px] font-black uppercase tracking-tighter text-blue-500">Official
+                                            Student Branch</span>
+                                    </div>
+                                    <h3 class="text-xl font-bold text-gray-900 mb-3">CSI Student Branch</h3>
+                                    <p class="text-sm text-gray-500 mb-4 line-clamp-2">Computer Society of India -
+                                        promoting software professional development.</p>
+                                    <div class="flex flex-wrap gap-2">
+                                        <span
+                                            class="px-2 py-1 bg-white border border-gray-100 rounded-lg text-[10px] font-bold text-gray-400">Coding
+                                            Contests</span>
+                                        <span
+                                            class="px-2 py-1 bg-white border border-gray-100 rounded-lg text-[10px] font-bold text-gray-400">IT
+                                            Quizzes</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Events Section -->
+                <section class="py-20 bg-white">
+                    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                        <div class="text-center mb-16">
+                            <span
+                                class="inline-block px-4 py-2 rounded-full bg-amber-100 text-amber-700 text-sm font-semibold mb-4">
+                                Celebrations
+                            </span>
+                            <h2 class="text-4xl font-bold text-gray-900 mb-4">
+                                Signature <span
+                                    class="text-transparent bg-clip-text bg-gradient-to-r from-amber-600 to-orange-600">Events</span>
+                            </h2>
+                            <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+                                Experience unforgettable moments throughout the academic year.
+                            </p>
+                        </div>
+
+                        <div class="grid md:grid-cols-3 gap-8">
+                            <!-- Event 1 -->
+                            <div
+                                class="group relative rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300">
+                                <div
+                                    class="h-64 bg-gradient-to-br from-blue-200 to-purple-200 flex items-center justify-center">
+                                    <span class="text-6xl">🎉</span>
+                                </div>
+                                <div
+                                    class="absolute inset-0 bg-gradient-to-t from-gray-900 via-gray-900/60 to-transparent">
+                                </div>
+                                <div class="absolute bottom-0 left-0 right-0 p-6 text-white">
+                                    <span class="text-sm font-medium text-blue-300 mb-2 block">February 2025</span>
+                                    <h3 class="text-xl font-bold mb-2">Annual Tech Fest</h3>
+                                    <p class="text-gray-300 text-sm line-clamp-2">The biggest technical extravaganza
+                                        featuring robotics, coding contests, and innovation showcases.</p>
+                                </div>
+                            </div>
+                            <!-- Event 2 -->
+                            <div
+                                class="group relative rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300">
+                                <div
+                                    class="h-64 bg-gradient-to-br from-pink-200 to-rose-200 flex items-center justify-center">
+                                    <span class="text-6xl">🎭</span>
+                                </div>
+                                <div
+                                    class="absolute inset-0 bg-gradient-to-t from-gray-900 via-gray-900/60 to-transparent">
+                                </div>
+                                <div class="absolute bottom-0 left-0 right-0 p-6 text-white">
+                                    <span class="text-sm font-medium text-blue-300 mb-2 block">March 2025</span>
+                                    <h3 class="text-xl font-bold mb-2">Cultural Fest - Utsav</h3>
+                                    <p class="text-gray-300 text-sm line-clamp-2">A celebration of art, music, dance,
+                                        and drama from across the country.</p>
+                                </div>
+                            </div>
+                            <!-- Event 3 -->
+                            <div
+                                class="group relative rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300">
+                                <div
+                                    class="h-64 bg-gradient-to-br from-emerald-200 to-green-200 flex items-center justify-center">
+                                    <span class="text-6xl">🏆</span>
+                                </div>
+                                <div
+                                    class="absolute inset-0 bg-gradient-to-t from-gray-900 via-gray-900/60 to-transparent">
+                                </div>
+                                <div class="absolute bottom-0 left-0 right-0 p-6 text-white">
+                                    <span class="text-sm font-medium text-blue-300 mb-2 block">January 2025</span>
+                                    <h3 class="text-xl font-bold mb-2">Sports Week</h3>
+                                    <p class="text-gray-300 text-sm line-clamp-2">Inter-college tournaments in cricket,
+                                        football, basketball, and athletics.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="text-center mt-12">
+                            <a href="events.html"
+                                class="inline-flex items-center gap-2 px-8 py-4 rounded-full bg-gradient-to-r from-purple-600 to-indigo-600 text-white font-semibold hover:shadow-lg hover:shadow-purple-500/25 transition-all duration-300 hover:-translate-y-1">
+                                View All Events <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                            </a>
+                        </div>
+                    </div>
+                </section>
+
+            </div>
+        </main>
+
+        <!-- Footer Injected Here -->
+    </div>
+
+    <!-- Core Scripts -->
+    <script src="../js/data.js"></script>
+    <script src="../js/components.js"></script>
+    <script>window.rootPath = '../';</script>
+    <script src="../js/main.js"></script>
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+
+</html>
