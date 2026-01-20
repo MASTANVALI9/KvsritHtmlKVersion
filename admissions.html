@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admissions | KVSRIT</title>
+    <meta name="description"
+        content="Apply for admission to B.Tech, M.Tech, MBA, and MCA programs at KVSRIT. Learn about eligibility, fee structure, and scholarships.">
 
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -24,6 +26,10 @@
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap"
         rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
     <style>
         body {
             font-family: 'Plus Jakarta Sans', sans-serif;
@@ -35,174 +41,222 @@
 </head>
 
 <body class="bg-white text-gray-900">
+    <div id="app">
+        <!-- Header Injected Here -->
 
-    <!-- Navbar Placeholder -->
-    <div id="navbar-placeholder"></div>
-
-    <main>
-        <!-- Page Header -->
-        <section class="bg-blue-900 text-white py-16">
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <nav class="flex items-center gap-2 text-blue-300 text-xs font-bold uppercase tracking-widest mb-4">
-                    <a href="index.html" class="hover:text-white transition-colors">Home</a>
-                    <i data-lucide="chevron-right" class="w-3 h-3"></i>
-                    <span class="text-white">Admissions</span>
-                </nav>
-                <h1 class="text-4xl font-bold mb-4">Join KVSRIT</h1>
-                <p class="text-blue-100 text-lg max-w-2xl leading-relaxed">
-                    Start your journey towards engineering excellence with Dr. K.V. Subba Reddy Institute of Technology.
-                </p>
-            </div>
-        </section>
-
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
-            <div class="grid lg:grid-cols-3 gap-16">
-
-                <!-- Main Content -->
-                <div class="lg:col-span-2 space-y-16">
-
-                    <!-- Admission Process -->
-                    <section>
-                        <div
-                            class="inline-block px-4 py-2 rounded-full bg-blue-50 text-blue-600 text-xs font-bold uppercase tracking-widest mb-6">
-                            Process</div>
-                        <h2 class="text-3xl font-extrabold text-gray-900 mb-8">How to Apply</h2>
-                        <div class="prose text-gray-600 max-w-none space-y-6">
-                            <p>Admissions at KVSRIT are strictly based on merit and the guidelines set by the Andhra
-                                Pradesh State Council of Higher Education (APSCHE).</p>
-
-                            <div class="grid md:grid-cols-2 gap-6">
-                                <div class="p-8 bg-blue-50 rounded-3xl border border-blue-100">
-                                    <h3 class="text-xl font-bold text-blue-900 mb-4">Category A (70%)</h3>
-                                    <p class="text-sm font-medium text-blue-800 leading-relaxed italic mb-4">Convener
-                                        Quota</p>
-                                    <p class="text-sm text-gray-600 leading-relaxed mb-6">Filled through centralized
-                                        counseling based on ranks secured in EAMCET / ECET / ICET / PGECET.</p>
-                                    <a href="http://apsche.ap.gov.in" target="_blank"
-                                        class="text-blue-600 font-bold text-sm flex items-center gap-1 hover:gap-3 transition-all">Visit
-                                        APSCHE Portal <i data-lucide="external-link" class="w-4 h-4"></i></a>
-                                </div>
-                                <div
-                                    class="p-8 bg-white rounded-3xl border border-gray-100 shadow-sm border-t-4 border-t-amber-400">
-                                    <h3 class="text-xl font-bold text-gray-900 mb-4">Category B (30%)</h3>
-                                    <p class="text-sm font-medium text-amber-700 leading-relaxed italic mb-4">Management
-                                        Quota</p>
-                                    <p class="text-sm text-gray-600 leading-relaxed mb-6">Filled directly by the college
-                                        management based on merit and as per APSCHE guidelines.</p>
-                                    <a href="contact.html?subject=CategoryB"
-                                        class="text-blue-600 font-bold text-sm flex items-center gap-1 hover:gap-3 transition-all">Enquire
-                                        Now <i data-lucide="arrow-right" class="w-4 h-4"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-
-                    <!-- Programs -->
-                    <section>
-                        <div
-                            class="inline-block px-4 py-2 rounded-full bg-emerald-50 text-emerald-600 text-xs font-bold uppercase tracking-widest mb-6">
-                            Eligibility</div>
-                        <h2 class="text-3xl font-extrabold text-gray-900 mb-8">Selection Criteria</h2>
-                        <div class="space-y-4">
-                            <div
-                                class="p-6 rounded-2xl bg-white border border-gray-100 hover:shadow-lg transition-all flex flex-col md:flex-row gap-6 items-start md:items-center">
-                                <div
-                                    class="w-16 h-16 rounded-2xl bg-blue-100 flex items-center justify-center flex-shrink-0 text-blue-600 font-bold text-lg">
-                                    UG</div>
-                                <div>
-                                    <h4 class="text-lg font-bold">B.Tech Programs</h4>
-                                    <p class="text-sm text-gray-500">10+2 with MPC. Admission via AP EAMCET rank.</p>
-                                </div>
-                            </div>
-                            <div
-                                class="p-6 rounded-2xl bg-white border border-gray-100 hover:shadow-lg transition-all flex flex-col md:flex-row gap-6 items-start md:items-center">
-                                <div
-                                    class="w-16 h-16 rounded-2xl bg-purple-100 flex items-center justify-center flex-shrink-0 text-purple-600 font-bold text-lg">
-                                    PG</div>
-                                <div>
-                                    <h4 class="text-lg font-bold">M.Tech / MBA / MCA</h4>
-                                    <p class="text-sm text-gray-500">Relevant Degree. Admission via GATE / PGECET /
-                                        ICET.</p>
-                                </div>
-                            </div>
-                            <div
-                                class="p-6 rounded-2xl bg-white border border-gray-100 hover:shadow-lg transition-all flex flex-col md:flex-row gap-6 items-start md:items-center">
-                                <div
-                                    class="w-16 h-16 rounded-2xl bg-amber-100 flex items-center justify-center flex-shrink-0 text-amber-600 font-bold text-lg">
-                                    Dip</div>
-                                <div>
-                                    <h4 class="text-lg font-bold">Diploma (Polytechnic)</h4>
-                                    <p class="text-sm text-gray-500">SSC (10th) Grade. Admission via AP POLYCET rank.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
+        <main>
+            <!-- Page Header -->
+            <section class="bg-gradient-to-r from-blue-900 to-indigo-900 text-white py-20 relative overflow-hidden">
+                <div class="max-w-4xl mx-auto px-4 relative z-10 text-center">
+                    <nav
+                        class="flex justify-center items-center gap-2 text-blue-300 text-xs font-bold uppercase tracking-widest mb-6">
+                        <a href="index.html" class="hover:text-white transition-colors">Home</a>
+                        <i data-lucide="chevron-right" class="w-3 h-3"></i>
+                        <span class="text-white">Admissions</span>
+                    </nav>
+                    <h1 class="text-5xl font-extrabold mb-6">Admissions 2024-25</h1>
+                    <p class="text-lg text-blue-100/80 leading-relaxed">
+                        Begin your journey towards a successful career in engineering & management
+                    </p>
                 </div>
+            </section>
 
-                <!-- Sidebar -->
-                <div class="space-y-12">
-                    <!-- CTA Card -->
-                    <div class="bg-gray-900 text-white p-10 rounded-[40px] relative overflow-hidden group">
-                        <div
-                            class="absolute top-0 right-0 w-32 h-32 bg-blue-600 opacity-20 filter blur-3xl transform -translate-y-1/2 translate-x-1/2">
-                        </div>
-                        <h3 class="text-2xl font-bold mb-6">Need Guidance?</h3>
-                        <p class="text-gray-400 text-sm leading-relaxed mb-8">Our admission cell is happy to help you
-                            find the right program and guide you through the process.</p>
-                        <div class="space-y-6">
-                            <div class="flex items-center gap-4">
-                                <div class="w-10 h-10 rounded-xl bg-white/10 flex items-center justify-center"><i
-                                        data-lucide="phone" class="w-5 h-5"></i></div>
-                                <div>
-                                    <div class="text-[10px] uppercase font-bold text-gray-500 tracking-widest">Call Us
-                                    </div>
-                                    <div class="font-bold">+91 91000 33333</div>
-                                </div>
-                            </div>
-                            <div class="flex items-center gap-4">
-                                <div class="w-10 h-10 rounded-xl bg-white/10 flex items-center justify-center"><i
-                                        data-lucide="mail" class="w-5 h-5"></i></div>
-                                <div>
-                                    <div class="text-[10px] uppercase font-bold text-gray-500 tracking-widest">Email Us
-                                    </div>
-                                    <div class="font-bold uppercase text-xs">admissions@drkvsrit.ac.in</div>
-                                </div>
-                            </div>
-                        </div>
+            <!-- Admission Process -->
+            <section class="py-24">
+                <div class="max-w-7xl mx-auto px-4">
+                    <div class="text-center mb-16">
+                        <h2 class="text-sm font-bold text-blue-600 uppercase tracking-widest mb-4">How to Apply</h2>
+                        <h3 class="text-4xl font-extrabold text-gray-900">Admission Process</h3>
                     </div>
 
-                    <!-- Downloads -->
-                    <div class="p-8 rounded-3xl border border-gray-100">
-                        <h3 class="text-lg font-bold mb-6">Documents Required</h3>
-                        <ul class="space-y-4">
-                            <li class="flex items-center gap-3 text-sm text-gray-600"><i data-lucide="check"
-                                    class="w-4 h-4 text-emerald-500"></i> AP EAMCET/ICET Rank Card</li>
-                            <li class="flex items-center gap-3 text-sm text-gray-600"><i data-lucide="check"
-                                    class="w-4 h-4 text-emerald-500"></i> SSC & Intermediate Memo</li>
-                            <li class="flex items-center gap-3 text-sm text-gray-600"><i data-lucide="check"
-                                    class="w-4 h-4 text-emerald-500"></i> Transfer Certificate (TC)</li>
-                            <li class="flex items-center gap-3 text-sm text-gray-600"><i data-lucide="check"
-                                    class="w-4 h-4 text-emerald-500"></i> Passport Sized Photos</li>
-                            <li class="flex items-center gap-3 text-sm text-gray-600"><i data-lucide="check"
-                                    class="w-4 h-4 text-emerald-500"></i> Caste Certificate (if applicable)</li>
-                        </ul>
+                    <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                        <div class="text-center">
+                            <div
+                                class="w-16 h-16 bg-blue-600 rounded-2xl flex items-center justify-center text-white text-2xl font-bold mx-auto mb-6">
+                                1</div>
+                            <h4 class="text-lg font-bold mb-2">Fill Application</h4>
+                            <p class="text-gray-600 text-sm">Complete the online application form with required details
+                            </p>
+                        </div>
+                        <div class="text-center">
+                            <div
+                                class="w-16 h-16 bg-blue-600 rounded-2xl flex items-center justify-center text-white text-2xl font-bold mx-auto mb-6">
+                                2</div>
+                            <h4 class="text-lg font-bold mb-2">Submit Documents</h4>
+                            <p class="text-gray-600 text-sm">Upload required documents and academic records</p>
+                        </div>
+                        <div class="text-center">
+                            <div
+                                class="w-16 h-16 bg-blue-600 rounded-2xl flex items-center justify-center text-white text-2xl font-bold mx-auto mb-6">
+                                3</div>
+                            <h4 class="text-lg font-bold mb-2">Counseling</h4>
+                            <p class="text-gray-600 text-sm">Attend counseling session for branch/course allocation</p>
+                        </div>
+                        <div class="text-center">
+                            <div
+                                class="w-16 h-16 bg-blue-600 rounded-2xl flex items-center justify-center text-white text-2xl font-bold mx-auto mb-6">
+                                4</div>
+                            <h4 class="text-lg font-bold mb-2">Confirm Admission</h4>
+                            <p class="text-gray-600 text-sm">Pay fees and complete admission formalities</p>
+                        </div>
                     </div>
                 </div>
+            </section>
 
-            </div>
-        </div>
-    </main>
+            <!-- Programs Offered -->
+            <section class="py-24 bg-gray-50">
+                <div class="max-w-7xl mx-auto px-4">
+                    <div class="text-center mb-16">
+                        <h2 class="text-sm font-bold text-blue-600 uppercase tracking-widest mb-4">Courses</h2>
+                        <h3 class="text-4xl font-extrabold text-gray-900">Programs Offered</h3>
+                    </div>
 
-    <!-- Footer Placeholder -->
-    <div id="footer-placeholder"></div>
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                        <div
+                            class="bg-white p-8 rounded-3xl shadow-sm border border-gray-100 hover:shadow-xl transition-all">
+                            <div class="w-14 h-14 bg-blue-100 rounded-2xl flex items-center justify-center mb-6">
+                                <i data-lucide="code" class="w-7 h-7 text-blue-600"></i>
+                            </div>
+                            <h4 class="text-xl font-bold mb-2">B.Tech</h4>
+                            <p class="text-gray-600 text-sm mb-4">4 Year Undergraduate Program</p>
+                            <ul class="text-sm text-gray-500 space-y-1">
+                                <li>• CSE, ECE, EEE</li>
+                                <li>• Civil, Mechanical</li>
+                                <li>• AI & ML, Data Science</li>
+                            </ul>
+                            <a href="courses/"
+                                class="text-blue-600 font-bold text-sm mt-4 inline-flex items-center gap-1 hover:gap-2 transition-all">
+                                View Details <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                            </a>
+                        </div>
+                        <div
+                            class="bg-white p-8 rounded-3xl shadow-sm border border-gray-100 hover:shadow-xl transition-all">
+                            <div class="w-14 h-14 bg-emerald-100 rounded-2xl flex items-center justify-center mb-6">
+                                <i data-lucide="microscope" class="w-7 h-7 text-emerald-600"></i>
+                            </div>
+                            <h4 class="text-xl font-bold mb-2">M.Tech</h4>
+                            <p class="text-gray-600 text-sm mb-4">2 Year Postgraduate Program</p>
+                            <ul class="text-sm text-gray-500 space-y-1">
+                                <li>• CSE, VLSI Design</li>
+                                <li>• Power Electronics</li>
+                                <li>• Structural Engineering</li>
+                            </ul>
+                            <a href="courses/"
+                                class="text-blue-600 font-bold text-sm mt-4 inline-flex items-center gap-1 hover:gap-2 transition-all">
+                                View Details <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                            </a>
+                        </div>
+                        <div
+                            class="bg-white p-8 rounded-3xl shadow-sm border border-gray-100 hover:shadow-xl transition-all">
+                            <div class="w-14 h-14 bg-amber-100 rounded-2xl flex items-center justify-center mb-6">
+                                <i data-lucide="briefcase" class="w-7 h-7 text-amber-600"></i>
+                            </div>
+                            <h4 class="text-xl font-bold mb-2">MBA</h4>
+                            <p class="text-gray-600 text-sm mb-4">2 Year Management Program</p>
+                            <ul class="text-sm text-gray-500 space-y-1">
+                                <li>• Finance</li>
+                                <li>• Marketing</li>
+                                <li>• Human Resources</li>
+                            </ul>
+                            <a href="departments/mba/"
+                                class="text-blue-600 font-bold text-sm mt-4 inline-flex items-center gap-1 hover:gap-2 transition-all">
+                                View Details <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                            </a>
+                        </div>
+                        <div
+                            class="bg-white p-8 rounded-3xl shadow-sm border border-gray-100 hover:shadow-xl transition-all">
+                            <div class="w-14 h-14 bg-purple-100 rounded-2xl flex items-center justify-center mb-6">
+                                <i data-lucide="monitor" class="w-7 h-7 text-purple-600"></i>
+                            </div>
+                            <h4 class="text-xl font-bold mb-2">MCA</h4>
+                            <p class="text-gray-600 text-sm mb-4">2 Year Computer Applications</p>
+                            <ul class="text-sm text-gray-500 space-y-1">
+                                <li>• Software Development</li>
+                                <li>• Database Management</li>
+                                <li>• Web Technologies</li>
+                            </ul>
+                            <a href="departments/mca/"
+                                class="text-blue-600 font-bold text-sm mt-4 inline-flex items-center gap-1 hover:gap-2 transition-all">
+                                View Details <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Fee Structure -->
+            <section class="py-24 bg-white">
+                <div class="max-w-7xl mx-auto px-4">
+                    <div class="text-center mb-16">
+                        <h2 class="text-sm font-bold text-blue-600 uppercase tracking-widest mb-4">Fees</h2>
+                        <h3 class="text-4xl font-extrabold text-gray-900">Fee Structure</h3>
+                    </div>
+
+                    <div class="bg-gray-50 rounded-3xl p-8">
+                        <table class="w-full">
+                            <thead>
+                                <tr class="border-b border-gray-200">
+                                    <th class="text-left py-4 font-bold">Program</th>
+                                    <th class="text-left py-4 font-bold">Duration</th>
+                                    <th class="text-left py-4 font-bold">Annual Fee (Approx)</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="border-b border-gray-100">
+                                    <td class="py-4">B.Tech (All Branches)</td>
+                                    <td class="py-4">4 Years</td>
+                                    <td class="py-4 text-blue-600 font-bold">As per APSCHE norms</td>
+                                </tr>
+                                <tr class="border-b border-gray-100">
+                                    <td class="py-4">M.Tech (All Branches)</td>
+                                    <td class="py-4">2 Years</td>
+                                    <td class="py-4 text-blue-600 font-bold">As per APSCHE norms</td>
+                                </tr>
+                                <tr class="border-b border-gray-100">
+                                    <td class="py-4">MBA</td>
+                                    <td class="py-4">2 Years</td>
+                                    <td class="py-4 text-blue-600 font-bold">As per APSCHE norms</td>
+                                </tr>
+                                <tr>
+                                    <td class="py-4">MCA</td>
+                                    <td class="py-4">2 Years</td>
+                                    <td class="py-4 text-blue-600 font-bold">As per APSCHE norms</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <p class="text-center text-gray-500 mt-6 text-sm">* Fees are subject to change as per government
+                        regulations. Contact admissions office for latest fee structure.</p>
+                </div>
+            </section>
+
+            <!-- Contact CTA -->
+            <section class="py-16 bg-gradient-to-r from-blue-600 to-indigo-600">
+                <div class="max-w-4xl mx-auto px-4 text-center">
+                    <h2 class="text-3xl font-bold text-white mb-4">Have Questions?</h2>
+                    <p class="text-blue-100 mb-8">Our admissions team is here to help you with any queries.</p>
+                    <div class="flex flex-wrap justify-center gap-4">
+                        <a href="tel:+919177317722"
+                            class="bg-white text-blue-600 px-6 py-3 rounded-full font-bold hover:bg-blue-50 transition-all flex items-center gap-2">
+                            <i data-lucide="phone" class="w-4 h-4"></i> +91 91773 17722
+                        </a>
+                        <a href="contact/"
+                            class="border-2 border-white text-white px-6 py-3 rounded-full font-bold hover:bg-white/10 transition-all">Contact
+                            Us</a>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer Injected Here -->
+    </div>
 
     <!-- Scripts -->
-    <script src="assets/js/components.js"></script>
-    <script>
-        // Init Lucide
-        lucide.createIcons();
-    </script>
+    <script src="js/data.js"></script>
+    <script src="js/components.js"></script>
+    <script>window.rootPath = '';</script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>
