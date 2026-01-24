@@ -32,8 +32,8 @@ const NAVBAR_HTML = `
     <div id="nav-inner" class="flex justify-between items-center h-20">
       <!-- Logo -->
       <div class="flex-shrink-0 flex items-center">
-        <a href="index.html" class="flex items-center gap-3 group">
-          <img src="https://drkvsrit.ac.in/assets/img/logo.png" alt="KVSRIT Logo" class="h-14">
+        <a href="index.html" class="flex items-center gap-4 group">
+          <img src="images/logo.png" alt="KVSRIT Logo" class="h-17">
           <div class="hidden lg:block">
             <h1 class="text-lg font-bold text-blue-900 leading-tight">KVSRIT</h1>
             <p class="text-[10px] text-gray-500 font-medium uppercase tracking-tight">Dr. K.V. Subba Reddy Institute of Technology</p>
@@ -185,7 +185,7 @@ const FOOTER_HTML = `
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
       <!-- College Info -->
       <div class="space-y-6">
-        <img src="https://drkvsrit.ac.in/assets/img/logo.png" alt="KVSRIT Logo" class="h-16 brightness-0 invert">
+        <img src="images/logo.png" alt="KVSRIT Logo" class="h-16 brightness-0 invert">
         <p class="text-sm leading-relaxed text-gray-400">
           Dr. K.V. Subba Reddy Institute of Technology (KVSRIT) is established in 2007 with a mission to produce high-quality engineering professionals.
         </p>
@@ -281,11 +281,13 @@ document.addEventListener('DOMContentLoaded', () => {
       const isPlacements = /\/placements\//.test(normalizedPath);
       const isStudentPortal = /\/student-portal\//.test(normalizedPath);
 
+      const isCourses = /\/courses\//.test(normalizedPath);
+
       // Multi-level nesting check (e.g. departments/cse/index.html)
       const deptMatch = normalizedPath.match(/\/departments\/([^\/]+)\//);
       if (deptMatch) return '../../';
 
-      if (isDept || isAbout || isAcademics || isCampus || isPlacements || isStudentPortal) {
+      if (isDept || isAbout || isAcademics || isCampus || isPlacements || isStudentPortal || isCourses) {
         return '../';
       }
       return './';
